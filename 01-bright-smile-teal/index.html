@@ -4,370 +4,467 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bright Smile Dental Clinic — Kothrud, Pune</title>
+<meta name="description" content="Bright Smile Dental Clinic in Kothrud, Pune — dental care for the whole family since 2011. Root canals, implants, Invisalign, kids dentistry. Call 020-1234-5678.">
+<meta name="keywords" content="dental clinic kothrud pune, dentist kothrud, dental implants pune, orthodontist pune, root canal kothrud, cosmetic dentistry pune, family dentist pune">
+<meta property="og:title" content="Bright Smile Dental Clinic — Kothrud, Pune">
+<meta property="og:description" content="Kothrud's family dentist since 2011. Root canals, implants, Invisalign. 2,347 patients and counting.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Bright Smile Dental Clinic",
+  "description": "Full-service dental clinic in Kothrud, Pune serving families since 2011",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop 12, Sai Arcade, Paud Road",
+    "addressLocality": "Kothrud",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411038",
+    "addressCountry": "IN"
+  },
+  "telephone": "02012345678",
+  "openingHours": "Mo-Sa 10:00-20:00 Su 10:00-13:00",
+  "priceRange": "₹₹"
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'Inter', sans-serif; }
-  h1,h2,h3,h4 { font-family: 'Poppins', sans-serif; }
-  .teal { color: #0D7C7C; }
-  .bg-teal { background-color: #0D7C7C; }
-  .gold { color: #F4A832; }
-  .bg-light-teal { background-color: #E8F5F5; }
-  .btn-teal { background-color: #0D7C7C; color: white; padding: 12px 28px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-  .btn-teal:hover { background-color: #0a6b6b; transform: translateY(-1px); }
-  .btn-outline { border: 2px solid #0D7C7C; color: #0D7C7C; padding: 10px 26px; border-radius: 8px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-  .btn-outline:hover { background-color: #0D7C7C; color: white; }
-  .card { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); transition: all 0.2s; }
-  .card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(13,124,124,0.15); }
-  .hero-bg { background: linear-gradient(135deg, #f0fafa 0%, #e8f5f5 50%, #d4eef0 100%); }
-  nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-  .stat-num { font-family: 'Poppins', sans-serif; font-size: 2.5rem; font-weight: 800; color: #0D7C7C; }
-  .section-title { font-size: 2rem; font-weight: 700; color: #1A1A1A; margin-bottom: 0.5rem; }
-  .section-sub { color: #666; font-size: 1.1rem; margin-bottom: 3rem; }
-  footer { background: #1A1A1A; color: #ccc; }
+  body { font-family: 'Lato', sans-serif; color: #1a1a1a; }
+  h1,h2,h3,h4,h5 { font-family: 'Outfit', sans-serif; }
+  :root { --teal: #0D7C7C; --teal-light: #E6F4F4; --gold: #C8860A; --text-muted: #5a5a5a; }
+
+  /* Nav */
+  nav { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid #e8e8e8; }
+  .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0.9rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+  .logo-text { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.15rem; color: var(--teal); letter-spacing: -0.01em; }
+  .logo-sub { font-size: 0.72rem; color: #888; font-family: 'Lato', sans-serif; margin-top: -2px; }
+  .nav-links { display: flex; gap: 2rem; }
+  .nav-links a { font-size: 0.875rem; color: #444; text-decoration: none; font-weight: 500; }
+  .nav-links a:hover { color: var(--teal); }
+  .btn-book { background: var(--teal); color: #fff; padding: 0.5rem 1.25rem; font-size: 0.875rem; font-weight: 700; text-decoration: none; border-radius: 3px; letter-spacing: 0.01em; }
+
+  /* Hero */
+  .hero { padding: 4.5rem 1.5rem 5rem; background: #f7fbfb; border-bottom: 2px solid #daeaea; }
+  .hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+  .hero-eyebrow { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 1rem; }
+  .hero h1 { font-size: 2.8rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 1.2rem; color: #111; }
+  .hero h1 em { font-style: normal; color: var(--teal); }
+  .hero-body { font-size: 1rem; line-height: 1.7; color: var(--text-muted); max-width: 440px; margin-bottom: 2rem; }
+  .cta-row { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .btn-primary { background: var(--teal); color: #fff; padding: 0.75rem 1.75rem; font-weight: 700; font-size: 0.95rem; border-radius: 3px; text-decoration: none; display: inline-block; }
+  .btn-secondary { border: 1.5px solid #bbb; color: #333; padding: 0.75rem 1.5rem; font-weight: 600; font-size: 0.95rem; border-radius: 3px; text-decoration: none; display: inline-block; }
+  .hero-stats { display: flex; gap: 2rem; }
+  .hero-stat .num { font-family: 'Outfit', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--teal); }
+  .hero-stat .lbl { font-size: 0.75rem; color: #777; margin-top: 1px; }
+
+  /* Hero visual */
+  .hero-visual { position: relative; }
+  .clinic-card { background: #fff; border-radius: 4px; border: 1px solid #daeaea; overflow: hidden; box-shadow: 0 8px 32px rgba(13,124,124,0.10); }
+  .clinic-header { background: var(--teal); padding: 2.5rem 2rem; text-align: center; }
+  .clinic-header .icon { font-size: 3rem; display: block; margin-bottom: 0.5rem; opacity: 0.9; }
+  .clinic-header h3 { color: #fff; font-size: 1.1rem; font-weight: 700; font-family: 'Outfit', sans-serif; }
+  .clinic-body { padding: 1.5rem; }
+  .info-row { display: flex; gap: 0.5rem; align-items: flex-start; margin-bottom: 0.75rem; font-size: 0.85rem; color: #444; }
+  .info-row .label { font-weight: 700; min-width: 60px; color: #111; }
+  .badge-row { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+  .badge { font-size: 0.7rem; background: var(--teal-light); color: var(--teal); padding: 0.25rem 0.6rem; border-radius: 2px; font-weight: 700; }
+
+  /* Section base */
+  .section { padding: 5rem 1.5rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--gold); margin-bottom: 0.5rem; }
+  .section-heading { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; color: #111; margin-bottom: 0.75rem; }
+  .section-desc { font-size: 0.95rem; line-height: 1.7; color: var(--text-muted); max-width: 520px; margin-bottom: 2.5rem; }
+
+  /* Services */
+  .bg-off { background: #f8f8f6; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+  .service-item { background: #fff; border: 1px solid #e8e8e8; border-radius: 3px; padding: 1.5rem; }
+  .service-item:hover { border-color: var(--teal); }
+  .service-num { font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--teal-light); line-height: 1; margin-bottom: 0.75rem; }
+  .service-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+  .service-item p { font-size: 0.84rem; line-height: 1.6; color: var(--text-muted); }
+  .service-price { font-size: 0.78rem; font-weight: 700; color: var(--teal); margin-top: 0.75rem; }
+
+  /* About doctor */
+  .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
+  .doc-photo { width: 100%; aspect-ratio: 1; background: var(--teal-light); border-radius: 3px; display: flex; align-items: center; justify-content: center; border: 1px solid #daeaea; }
+  .doc-initials { font-family: 'Outfit', sans-serif; font-size: 5rem; font-weight: 800; color: var(--teal); opacity: 0.5; }
+  .doc-name { font-size: 1.75rem; font-weight: 800; margin-bottom: 0.25rem; }
+  .doc-cred { font-size: 0.85rem; color: var(--teal); font-weight: 700; margin-bottom: 1.25rem; }
+  .doc-bio { font-size: 0.95rem; line-height: 1.75; color: #444; margin-bottom: 1.5rem; }
+  .doc-quote { border-left: 3px solid var(--teal); padding-left: 1.25rem; font-style: italic; color: #555; font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.5rem; }
+  .doc-creds { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .cred-pill { font-size: 0.78rem; background: var(--teal-light); color: var(--teal); padding: 0.3rem 0.75rem; border-radius: 2px; font-weight: 600; }
+
+  /* Testimonials */
+  .testimonials-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 2.5rem; }
+  .rating-big { font-family: 'Outfit', sans-serif; font-size: 4rem; font-weight: 800; color: var(--teal); line-height: 1; }
+  .rating-sub { font-size: 0.85rem; color: #777; margin-top: 0.25rem; }
+  .rating-note { font-size: 0.82rem; color: #999; margin-top: 0.5rem; font-style: italic; }
+  .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .testi-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 3px; padding: 1.5rem; }
+  .testi-stars { color: var(--gold); font-size: 0.82rem; font-weight: 700; margin-bottom: 0.75rem; }
+  .testi-text { font-size: 0.88rem; line-height: 1.7; color: #333; margin-bottom: 1rem; }
+  .testi-meta { font-size: 0.78rem; color: #888; }
+  .testi-meta strong { color: #444; font-weight: 700; display: block; }
+  .testi-card.featured { border-color: var(--teal); background: var(--teal-light); grid-column: span 1; }
+
+  /* FAQ */
+  .faq-list { max-width: 680px; }
+  .faq-item { border-bottom: 1px solid #e8e8e8; padding: 1.25rem 0; }
+  .faq-q { font-size: 0.95rem; font-weight: 700; color: #111; cursor: pointer; display: flex; justify-content: space-between; }
+  .faq-a { font-size: 0.88rem; line-height: 1.7; color: #555; margin-top: 0.6rem; display: none; }
+  .faq-item.open .faq-a { display: block; }
+  .faq-item.open .faq-toggle { transform: rotate(45deg); display: inline-block; }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .contact-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #aaa; margin-bottom: 0.25rem; }
+  .contact-val { font-size: 0.95rem; color: #222; font-weight: 500; margin-bottom: 1.25rem; }
+  .book-form { background: #f7fbfb; border: 1px solid #daeaea; border-radius: 3px; padding: 2rem; }
+  .form-row { margin-bottom: 1rem; }
+  .form-row input, .form-row select { width: 100%; padding: 0.65rem 0.9rem; border: 1px solid #ddd; border-radius: 2px; font-size: 0.9rem; font-family: 'Lato', sans-serif; }
+  .form-row input:focus, .form-row select:focus { outline: none; border-color: var(--teal); }
+  .form-row label { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #666; margin-bottom: 0.35rem; }
+  .submit-btn { background: var(--teal); color: #fff; width: 100%; padding: 0.85rem; font-weight: 700; font-size: 0.95rem; border: none; border-radius: 3px; cursor: pointer; font-family: 'Outfit', sans-serif; letter-spacing: 0.01em; }
+
+  /* Footer */
+  footer { background: #111; color: #aaa; padding: 2.5rem 1.5rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+  .footer-brand { font-family: 'Outfit', sans-serif; color: #fff; font-weight: 700; font-size: 1rem; }
+  .footer-links { display: flex; gap: 1.5rem; font-size: 0.82rem; }
+  .footer-links a { color: #777; text-decoration: none; }
+  .footer-links a:hover { color: #ccc; }
+  .footer-copy { font-size: 0.78rem; color: #555; margin-top: 1rem; text-align: center; width: 100%; }
+
+  @media (max-width: 768px) {
+    .hero-inner, .about-grid, .contact-grid, .testimonials-grid, .testimonials-intro { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+    .hero-stats { flex-wrap: wrap; }
+    .nav-links { display: none; }
+  }
 </style>
 </head>
-<body class="bg-white text-gray-900">
+<body>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <div class="flex items-center gap-2">
-      <span class="text-2xl">🦷</span>
-      <div>
-        <div class="font-bold text-lg teal leading-tight">Bright Smile Dental</div>
-        <div class="text-xs text-gray-500">Kothrud, Pune</div>
-      </div>
+  <div class="nav-inner">
+    <div>
+      <div class="logo-text">Bright Smile Dental</div>
+      <div class="logo-sub">Kothrud, Pune — Est. 2011</div>
     </div>
-    <div class="hidden md:flex gap-8 text-sm font-medium text-gray-600">
-      <a href="#services" class="hover:text-teal transition-colors">Services</a>
-      <a href="#about" class="hover:text-teal transition-colors">About</a>
-      <a href="#testimonials" class="hover:text-teal transition-colors">Patients</a>
-      <a href="#contact" class="hover:text-teal transition-colors">Contact</a>
+    <div class="nav-links hidden md:flex">
+      <a href="#treatments">Treatments</a>
+      <a href="#doctor">Dr. Joshi</a>
+      <a href="#patients">Patients</a>
+      <a href="#book">Book Visit</a>
     </div>
-    <a href="#book" class="btn-teal text-sm hidden md:block">Book Appointment →</a>
+    <a href="#book" class="btn-book">Book a Visit</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero-bg py-20 px-4">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    <div class="flex-1" id="hero-text">
-      <div class="inline-block bg-teal text-white text-xs font-semibold px-3 py-1 rounded-full mb-6 gold-text" style="background:#F4A832; color:#1a1a1a;">
-        ✓ Trusted by 2,000+ families in Kothrud
-      </div>
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">
-        Your Smile Deserves<br><span class="teal">the Best Care</span>
-      </h1>
-      <p class="text-lg text-gray-600 mb-8 max-w-lg">
-        Advanced dental treatments in Kothrud, Pune. Painless procedures, modern technology, and a team that genuinely cares about your smile.
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Kothrud, Pune — Family Dental Clinic</div>
+      <h1>14 Years.<br><em>2,347 Smiles.</em><br>One Address.</h1>
+      <p class="hero-body">
+        Root canals, implants, Invisalign, kids' first cleanings — we handle it all at one clinic on Paud Road. No referrals, no waiting weeks for a slot.
       </p>
-      <div class="flex flex-wrap gap-4 mb-10">
-        <a href="#book" class="btn-teal">Book Appointment →</a>
-        <a href="tel:02012345678" class="btn-outline">📞 020-1234-5678</a>
+      <div class="cta-row">
+        <a href="#book" class="btn-primary">Book Your Visit →</a>
+        <a href="tel:02012345678" class="btn-secondary">Call: 020-1234-5678</a>
       </div>
-      <div class="flex flex-wrap gap-6 text-sm text-gray-600">
-        <span>✅ 15+ Years Experience</span>
-        <span>✅ 2,000+ Patients</span>
-        <span>✅ Painless Treatments</span>
-        <span>✅ Mon–Sat: 10AM–8PM</span>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">2,347</div>
+          <div class="lbl">patients since 2011</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">4.8★</div>
+          <div class="lbl">on Google (211 reviews)</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">1 visit</div>
+          <div class="lbl">most root canals done</div>
+        </div>
       </div>
     </div>
-    <div class="flex-1 flex justify-center">
-      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=500&q=80" 
-           alt="Modern dental clinic" class="rounded-2xl shadow-2xl w-full max-w-md object-cover" style="max-height:420px;">
-    </div>
-  </div>
-</section>
 
-<!-- SERVICES -->
-<section id="services" class="py-20 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <div class="section-title" id="services-title">Everything For Your Dental Health</div>
-    <div class="section-sub">From routine cleanings to complete smile makeovers — all under one roof.</div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="card service-card">
-        <div class="text-4xl mb-4">🦷</div>
-        <h3 class="font-bold text-lg mb-2">Teeth Cleaning</h3>
-        <p class="text-gray-600 text-sm">Professional scaling & polishing. 45-min appointment. Recommended every 6 months.</p>
-      </div>
-      <div class="card service-card">
-        <div class="text-4xl mb-4">😁</div>
-        <h3 class="font-bold text-lg mb-2">Teeth Whitening</h3>
-        <p class="text-gray-600 text-sm">In-chair whitening, 2–4 shades brighter in one session. Safe and long-lasting.</p>
-      </div>
-      <div class="card service-card">
-        <div class="text-4xl mb-4">🔧</div>
-        <h3 class="font-bold text-lg mb-2">Dental Implants</h3>
-        <p class="text-gray-600 text-sm">Permanent tooth replacement that looks and feels completely natural. Lifetime solution.</p>
-      </div>
-      <div class="card service-card">
-        <div class="text-4xl mb-4">👶</div>
-        <h3 class="font-bold text-lg mb-2">Kids Dentistry</h3>
-        <p class="text-gray-600 text-sm">Gentle, fear-free care for children aged 3–16. We make dental visits fun!</p>
-      </div>
-      <div class="card service-card">
-        <div class="text-4xl mb-4">🦴</div>
-        <h3 class="font-bold text-lg mb-2">Root Canal</h3>
-        <p class="text-gray-600 text-sm">Pain-free RCT using rotary endodontics. Most cases resolved in a single visit.</p>
-      </div>
-      <div class="card service-card">
-        <div class="text-4xl mb-4">✨</div>
-        <h3 class="font-bold text-lg mb-2">Smile Makeover</h3>
-        <p class="text-gray-600 text-sm">Veneers, bonding & clear aligners. Transform your confidence in just a few weeks.</p>
+    <div class="hero-visual">
+      <div class="clinic-card">
+        <div class="clinic-header">
+          <span class="icon">🏥</span>
+          <h3>Bright Smile Dental Clinic</h3>
+        </div>
+        <div class="clinic-body">
+          <div class="info-row"><span class="label">Address</span><span>Shop 12, Sai Arcade, Paud Road, Kothrud — 411038</span></div>
+          <div class="info-row"><span class="label">Hours</span><span>Mon–Sat 10am–8pm · Sun 10am–1pm</span></div>
+          <div class="info-row"><span class="label">Phone</span><span>020-1234-5678 &nbsp;·&nbsp; +91-98765-43210</span></div>
+          <div class="info-row"><span class="label">Parking</span><span>Free parking behind the building, off Paud Road</span></div>
+          <div class="badge-row">
+            <span class="badge">BDS + MDS</span>
+            <span class="badge">Rotary RCT</span>
+            <span class="badge">Invisalign Certified</span>
+            <span class="badge">Kids Friendly</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
-<section class="bg-light-teal py-20 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <div class="section-title">Why Pune Trusts Bright Smile</div>
-    <div class="section-sub">Numbers that speak for themselves.</div>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-      <div>
-        <div class="stat-num" id="stat1">0</div>
-        <div class="text-gray-600 font-medium">Happy Patients</div>
+<!-- TREATMENTS -->
+<section id="treatments" class="section bg-off">
+  <div class="section-inner">
+    <div class="section-label">What We Treat</div>
+    <h2 class="section-heading">From first cleanings to full smile rebuilds</h2>
+    <p class="section-desc">All treatments done in-house — no referrals to other clinics. If your mouth needs it, we likely do it here.</p>
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-num">01</div>
+        <h3>Scaling & Cleaning</h3>
+        <p>45-minute professional clean — removes tartar buildup, prevents gum disease. Recommended every 6 months.</p>
+        <div class="service-price">From ₹800</div>
       </div>
-      <div>
-        <div class="stat-num" id="stat2">0</div>
-        <div class="text-gray-600 font-medium">Years Experience</div>
+      <div class="service-item">
+        <div class="service-num">02</div>
+        <h3>Root Canal Treatment</h3>
+        <p>Painless single-visit RCT using rotary endodontics. We've done over 800 of these. No drama, no multiple appointments for most cases.</p>
+        <div class="service-price">From ₹3,500</div>
       </div>
-      <div>
-        <div class="stat-num" id="stat3">0</div>
-        <div class="text-gray-600 font-medium">Google Rating</div>
+      <div class="service-item">
+        <div class="service-num">03</div>
+        <h3>Dental Implants</h3>
+        <p>Titanium implants that fuse with the jawbone — looks and bites exactly like a natural tooth. Lifetime solution if you maintain it.</p>
+        <div class="service-price">From ₹22,000</div>
       </div>
-      <div>
-        <div class="stat-num" id="stat4">0</div>
-        <div class="text-gray-600 font-medium">Hr Appointment</div>
+      <div class="service-item">
+        <div class="service-num">04</div>
+        <h3>Invisalign &amp; Braces</h3>
+        <p>Clear aligner treatment for adults who can't wear traditional braces. Dr. Joshi is Invisalign-certified since 2018.</p>
+        <div class="service-price">Consultation ₹0</div>
       </div>
-    </div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl p-6 shadow-sm">
-        <div class="text-teal text-2xl mb-3">✅</div>
-        <h4 class="font-bold mb-1">No Waiting Lines</h4>
-        <p class="text-gray-600 text-sm">Book online and arrive exactly on time. Your appointment is yours alone.</p>
+      <div class="service-item">
+        <div class="service-num">05</div>
+        <h3>Kids Dentistry (3–16 yrs)</h3>
+        <p>Fear-free appointments for children. We use distraction techniques — most kids leave smiling. First visit to the dentist? Call us first.</p>
+        <div class="service-price">From ₹500</div>
       </div>
-      <div class="bg-white rounded-xl p-6 shadow-sm">
-        <div class="text-teal text-2xl mb-3">✅</div>
-        <h4 class="font-bold mb-1">Transparent Pricing</h4>
-        <p class="text-gray-600 text-sm">No hidden charges. We discuss costs upfront so there are zero surprises.</p>
-      </div>
-      <div class="bg-white rounded-xl p-6 shadow-sm">
-        <div class="text-teal text-2xl mb-3">✅</div>
-        <h4 class="font-bold mb-1">Latest Technology</h4>
-        <p class="text-gray-600 text-sm">Digital X-rays, painless anaesthesia, and modern equipment for your comfort.</p>
+      <div class="service-item">
+        <div class="service-num">06</div>
+        <h3>Teeth Whitening</h3>
+        <p>In-chair bleaching, 2–4 shades brighter in one 60-minute session. Safe for enamel, results last 12–18 months with proper care.</p>
+        <div class="service-price">From ₹4,500</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT DOCTOR -->
-<section id="about" class="py-20 px-4">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-    <div class="flex-shrink-0">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg" 
-           alt="Dr. Priya Joshi" class="rounded-full w-48 h-48 object-cover border-4 border-teal shadow-xl">
-    </div>
-    <div id="about-text">
-      <div class="text-sm font-semibold teal uppercase tracking-wide mb-2">Meet Your Dentist</div>
-      <h2 class="text-3xl font-bold mb-4">Dr. Priya Joshi</h2>
-      <p class="text-gray-600 mb-4 text-lg">
-        Dr. Priya Joshi is a BDS, MDS graduate with 15 years of experience in restorative and cosmetic dentistry. She founded Bright Smile Dental in 2011 with one mission: make quality dental care accessible to every family in Kothrud.
-      </p>
-      <blockquote class="border-l-4 border-teal pl-4 italic text-gray-500 mb-6">
-        "I believe every patient deserves a smile they're proud of — and treatments that don't hurt their pocket or their confidence."
-      </blockquote>
-      <div class="flex flex-wrap gap-4 text-sm">
-        <span class="bg-light-teal px-3 py-2 rounded-full">🎓 BDS, MDS — Pune University</span>
-        <span class="bg-light-teal px-3 py-2 rounded-full">🏆 15 Years Experience</span>
-        <span class="bg-light-teal px-3 py-2 rounded-full">📍 Kothrud, Pune</span>
+<!-- DOCTOR -->
+<section id="doctor" class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="doc-photo">
+          <span class="doc-initials">PJ</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Your Dentist</div>
+        <div class="doc-name">Dr. Priya Joshi</div>
+        <div class="doc-cred">BDS (Pune) · MDS Prosthodontics · Invisalign Certified</div>
+        <p class="doc-bio">
+          Dr. Joshi opened this clinic on Paud Road in September 2011, a year after finishing her MDS from Pune's D.Y. Patil Dental College. She wanted to run a practice where treatment decisions weren't driven by upselling — just by what the patient actually needs.
+        </p>
+        <p class="doc-bio">
+          In 14 years she's done north of 800 root canals, fitted 340+ implants, and treated three generations of a few Kothrud families. She still does every procedure herself — doesn't hand off to assistants mid-treatment.
+        </p>
+        <blockquote class="doc-quote">
+          "Most dental anxiety comes from surprises. I explain every step before I do it. No one leaves not knowing what just happened and why."
+        </blockquote>
+        <div class="doc-creds">
+          <span class="cred-pill">BDS — D.Y. Patil, Pune</span>
+          <span class="cred-pill">MDS Prosthodontics</span>
+          <span class="cred-pill">Invisalign Certified (2018)</span>
+          <span class="cred-pill">IDA Member</span>
+          <span class="cred-pill">800+ RCTs performed</span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" class="bg-gray-50 py-20 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <div class="section-title">What Our Patients Say</div>
-    <div class="text-yellow-400 text-2xl mb-2">⭐⭐⭐⭐⭐</div>
-    <div class="text-gray-500 mb-10">4.9 / 5 — Based on 200+ Google Reviews</div>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="card testimonial-card">
-        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-        <p class="text-gray-700 italic mb-4">"I was terrified of dentists. Dr. Joshi made my root canal completely painless. Booked my family's checkups the same week."</p>
-        <div class="font-semibold teal">— Rahul M., Kothrud</div>
+<section id="patients" class="section bg-off">
+  <div class="section-inner">
+    <div class="testimonials-intro">
+      <div>
+        <div class="section-label">From Our Patients</div>
+        <h2 class="section-heading">What people actually say</h2>
+        <p class="section-desc">We don't curate for perfection. These are from our Google listing — some are short, some long. All genuine.</p>
       </div>
-      <div class="card testimonial-card">
-        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-        <p class="text-gray-700 italic mb-4">"Best teeth whitening in Pune. Done in one hour, results are incredible. Highly recommend for anyone with a wedding coming up!"</p>
-        <div class="font-semibold teal">— Sneha K., Baner</div>
+      <div>
+        <div class="rating-big">4.8</div>
+        <div class="rating-sub">★★★★★ Google Rating</div>
+        <div class="rating-note">Based on 211 reviews · Last updated Feb 2026</div>
       </div>
-      <div class="card testimonial-card">
-        <div class="text-yellow-400 mb-3">⭐⭐⭐⭐⭐</div>
-        <p class="text-gray-700 italic mb-4">"Brought my 6-year-old who was scared of the dentist. The staff was so patient and kind. My son actually asked to come back!"</p>
-        <div class="font-semibold teal">— Anjali P., Karve Nagar</div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card featured">
+        <div class="testi-stars">★★★★★ &nbsp; 5/5</div>
+        <p class="testi-text">"Took my 7-year-old who was so scared he was crying in the waiting room. Dr. Joshi sat him down, showed him every instrument before using it, let him hold the mirror. He came out asking if he could come back next month. Honestly a different experience from any dentist I've taken him to."</p>
+        <div class="testi-meta"><strong>Meghna Kothari</strong> Karve Nagar · Nov 2025</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★ &nbsp; 5/5</div>
+        <p class="testi-text">"Had a root canal done in one sitting. I was expecting multiple visits — finished in about 90 minutes. The injection was the worst part and even that wasn't bad. Good clinic."</p>
+        <div class="testi-meta"><strong>Rahul Mishra</strong> Kothrud · Jan 2026</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★ &nbsp; 4/5</div>
+        <p class="testi-text">"Good doctor, explains everything clearly. Wait time was longer than expected (20 min past my appointment). But the treatment itself was fine — got two fillings, no pain. Would come back."</p>
+        <div class="testi-meta"><strong>Ajit Pawar</strong> Warje · Dec 2025</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★ &nbsp; 5/5</div>
+        <p class="testi-text">"Whitening treatment came out really well. 3 shades lighter, lasted longer than the one I'd done at a different place 2 years ago. Pricing was upfront, no hidden charges."</p>
+        <div class="testi-meta"><strong>Sneha Kulkarni</strong> Baner · Oct 2025</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★ &nbsp; 5/5</div>
+        <p class="testi-text">"Been coming here for 6 years now, whole family. The clinic is clean and they use disposable equipment. Dr. Joshi remembers your history without needing to look at notes — that's rare."</p>
+        <div class="testi-meta"><strong>Vikram Deshpande</strong> Kothrud · Sep 2025</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★ &nbsp; 5/5</div>
+        <p class="testi-text">"Implant done 8 months ago, feels completely natural. The whole process took about 4 months (healing time). Expensive but worth every rupee — can eat normally again."</p>
+        <div class="testi-meta"><strong>Sunita Agarwal</strong> Deccan · Aug 2025</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BOOK APPOINTMENT -->
-<section id="book" class="bg-teal py-20 px-4">
-  <div class="max-w-4xl mx-auto text-center text-white">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready for a Healthier Smile?</h2>
-    <p class="text-teal-100 text-lg mb-10" style="color:#c8eeee;">Book your appointment today. We'll confirm within 2 hours. New patients welcome.</p>
-    <div class="bg-white rounded-2xl p-8 text-left max-w-xl mx-auto shadow-2xl">
-      <h3 class="font-bold text-gray-900 text-xl mb-6">Book Appointment</h3>
-      <div class="grid md:grid-cols-2 gap-4 mb-4">
-        <input type="text" placeholder="Your Name" class="border border-gray-200 rounded-lg px-4 py-3 w-full text-gray-900 focus:outline-none focus:border-teal">
-        <input type="tel" placeholder="Phone Number" class="border border-gray-200 rounded-lg px-4 py-3 w-full text-gray-900 focus:outline-none focus:border-teal">
+<!-- FAQ -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-label">Before You Book</div>
+    <h2 class="section-heading">Common questions</h2>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Do I need to book in advance or can I walk in? <span class="faq-toggle" style="transition:transform 0.2s">+</span>
+        </div>
+        <div class="faq-a">We strongly recommend booking — we're usually 2–3 days out. Walk-ins are accepted for emergencies (toothaches, broken teeth) but you may wait 30–60 minutes. Call 020-1234-5678 or WhatsApp to check same-day availability.</div>
       </div>
-      <select class="border border-gray-200 rounded-lg px-4 py-3 w-full text-gray-700 mb-4 focus:outline-none focus:border-teal">
-        <option>Select Service</option>
-        <option>Routine Checkup</option>
-        <option>Teeth Cleaning</option>
-        <option>Teeth Whitening</option>
-        <option>Dental Implants</option>
-        <option>Root Canal</option>
-        <option>Smile Makeover</option>
-        <option>Kids Dentistry</option>
-      </select>
-      <input type="date" class="border border-gray-200 rounded-lg px-4 py-3 w-full text-gray-700 mb-6 focus:outline-none focus:border-teal">
-      <button class="btn-teal w-full text-center text-base py-3" onclick="alert('Thank you! We will confirm your appointment within 2 hours.')">
-        Book My Appointment →
-      </button>
-      <div class="text-center mt-4">
-        <a href="https://wa.me/919876543210" class="text-gray-600 hover:text-teal text-sm">
-          💬 Or WhatsApp us: +91-98765-43210
-        </a>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is a root canal really single-visit? <span class="faq-toggle" style="transition:transform 0.2s">+</span>
+        </div>
+        <div class="faq-a">Most straightforward RCTs, yes — about 80% of the cases we see. If there's significant infection or the tooth has complex canals, we may need 2 visits. Dr. Joshi will tell you upfront after looking at your X-ray, not after charging you for the first visit.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Do you accept insurance? <span class="faq-toggle" style="transition:transform 0.2s">+</span>
+        </div>
+        <div class="faq-a">We don't bill insurance directly, but we provide itemised receipts you can submit for reimbursement. Most corporate health plans cover scaling, fillings, and extractions. Ask your HR department what's covered before booking.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          My child is terrified of dentists. Should I still come? <span class="faq-toggle" style="transition:transform 0.2s">+</span>
+        </div>
+        <div class="faq-a">Yes — and tell us before arriving. Dr. Joshi handles anxious kids regularly. For the first visit we usually just let the child sit in the chair, see the instruments, and get comfortable. No treatment on visit one if they're nervous. It works better long-term.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          How much does a checkup cost? <span class="faq-toggle" style="transition:transform 0.2s">+</span>
+        </div>
+        <div class="faq-a">Consultation is ₹300 (waived if you book a same-day treatment). Scaling starts at ₹800. X-rays ₹250–400 depending on type. We tell you the full cost before starting any procedure — no surprises on the way out.</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-20 px-4">
-  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-    <div>
-      <h2 class="text-3xl font-bold mb-8">Find Us</h2>
-      <div class="space-y-4 text-gray-600">
-        <div class="flex items-start gap-3">
-          <span class="text-xl">📍</span>
-          <div>
-            <div class="font-semibold text-gray-900">Address</div>
-            <div>Shop 12, Sai Arcade, Paud Road<br>Kothrud, Pune - 411038</div>
+<!-- BOOK + CONTACT -->
+<section id="book" class="section" style="background:#f0f7f7; border-top:2px solid #daeaea;">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div>
+        <div class="section-label">Book Your Visit</div>
+        <h2 class="section-heading">Come in. We'll sort it out.</h2>
+        <p style="font-size:0.9rem; line-height:1.7; color:#555; margin-bottom:2rem;">New patients welcome. Emergencies seen same day when possible. Most appointments confirmed within a few hours by WhatsApp.</p>
+
+        <div class="contact-label">Address</div>
+        <div class="contact-val">Shop 12, Sai Arcade, Paud Road, Kothrud, Pune — 411038<br><span style="font-size:0.82rem; color:#888;">10 min from Swargate · Free parking behind building</span></div>
+
+        <div class="contact-label">Phone &amp; WhatsApp</div>
+        <div class="contact-val">020-1234-5678 · +91-98765-43210</div>
+
+        <div class="contact-label">Email</div>
+        <div class="contact-val">brightsmile.kothrud@gmail.com</div>
+
+        <div class="contact-label">Hours</div>
+        <div class="contact-val">Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 1:00 PM (emergencies only)</div>
+      </div>
+      <div>
+        <div class="book-form">
+          <h3 style="font-family:'Outfit',sans-serif; font-weight:700; font-size:1.15rem; margin-bottom:1.5rem;">Request an Appointment</h3>
+          <div class="form-row"><label>Your Name</label><input type="text" placeholder="e.g. Priya Sharma"></div>
+          <div class="form-row"><label>Mobile Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+          <div class="form-row">
+            <label>What Do You Need?</label>
+            <select>
+              <option value="">— Select —</option>
+              <option>Routine Checkup &amp; X-ray</option>
+              <option>Teeth Cleaning (Scaling)</option>
+              <option>Teeth Whitening</option>
+              <option>Filling / Cavity</option>
+              <option>Root Canal</option>
+              <option>Implant Consultation</option>
+              <option>Invisalign / Braces</option>
+              <option>Kids Dentistry</option>
+              <option>Toothache / Emergency</option>
+              <option>Other</option>
+            </select>
           </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-xl">📞</span>
-          <div>
-            <div class="font-semibold text-gray-900">Phone</div>
-            <div>020-1234-5678 | +91-98765-43210</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-xl">📧</span>
-          <div>
-            <div class="font-semibold text-gray-900">Email</div>
-            <div>brightsmile.kothrud@gmail.com</div>
-          </div>
-        </div>
-        <div class="flex items-start gap-3">
-          <span class="text-xl">⏰</span>
-          <div>
-            <div class="font-semibold text-gray-900">Hours</div>
-            <div>Mon–Sat: 10:00 AM – 8:00 PM<br>Sunday: 10:00 AM – 1:00 PM</div>
-          </div>
+          <div class="form-row"><label>Preferred Date</label><input type="date"></div>
+          <button class="submit-btn" onclick="alert('Request received! We will confirm your appointment by WhatsApp within a few hours.')">Request Appointment →</button>
+          <p style="font-size:0.78rem; color:#888; text-align:center; margin-top:0.75rem;">Or WhatsApp directly: <a href="https://wa.me/919876543210" style="color:var(--teal);">+91-98765-43210</a></p>
         </div>
       </div>
-    </div>
-    <div>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.8!2d73.8139!3d18.5019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS290aHJ1ZCwgUHVuZQ!5e0!3m2!1sen!2sin!4v1"
-        width="100%" height="300" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy">
-      </iframe>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="py-12 px-4">
-  <div class="max-w-6xl mx-auto">
-    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-      <div>
-        <div class="flex items-center gap-2 mb-2">
-          <span class="text-2xl">🦷</span>
-          <span class="text-white font-bold">Bright Smile Dental Clinic</span>
-        </div>
-        <div class="text-gray-500 text-sm italic">"Your smile is our mission."</div>
-      </div>
-      <div class="flex gap-6 text-sm text-gray-400">
-        <a href="#services" class="hover:text-white">Services</a>
-        <a href="#about" class="hover:text-white">About</a>
-        <a href="#testimonials" class="hover:text-white">Patients</a>
-        <a href="#book" class="hover:text-white">Book</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
-      </div>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Bright Smile Dental Clinic</div>
+      <div style="font-size:0.78rem; margin-top:0.25rem; color:#555;">Kothrud, Pune · Est. 2011 · BDS + MDS</div>
     </div>
-    <hr class="border-gray-700 my-6">
-    <div class="flex flex-col md:flex-row justify-between text-sm text-gray-500">
-      <div>© 2026 Bright Smile Dental Clinic. All rights reserved.</div>
-      <div>Designed by <span style="color:#F4A832;">DentWeb</span> · Powered by Invictus AI</div>
+    <div class="footer-links">
+      <a href="#treatments">Treatments</a>
+      <a href="#doctor">About</a>
+      <a href="#patients">Reviews</a>
+      <a href="#book">Book</a>
     </div>
   </div>
+  <div class="footer-copy">© 2026 Bright Smile Dental Clinic · All rights reserved · Website by Invictus AI</div>
 </footer>
 
 <script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Hero animations
-  gsap.timeline()
-    .from("#hero-text > *", { opacity: 0, y: 30, stagger: 0.15, duration: 0.7, ease: "power2.out" });
-
-  // Service cards
-  gsap.from(".service-card", {
-    scrollTrigger: { trigger: "#services", start: "top 80%" },
-    opacity: 0, y: 40, stagger: 0.1, duration: 0.6, ease: "power2.out"
-  });
-
-  // Stats counter
-  function animateCounter(id, target, suffix) {
-    ScrollTrigger.create({
-      trigger: "#stat1",
-      start: "top 80%",
-      once: true,
-      onEnter: () => {
-        gsap.to({val: 0}, {
-          val: target,
-          duration: 2,
-          ease: "power2.out",
-          onUpdate: function() {
-            document.getElementById(id).textContent = Math.round(this.targets()[0].val) + suffix;
-          }
-        });
-      }
+  // FAQ toggle
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      item.classList.toggle('open');
     });
-  }
-  animateCounter("stat1", 2000, "+");
-  animateCounter("stat2", 15, "+");
-  animateCounter("stat3", 4.9, "★");
-  animateCounter("stat4", 48, "h");
-
-  // About
-  gsap.from("#about-text > *", {
-    scrollTrigger: { trigger: "#about", start: "top 75%" },
-    opacity: 0, x: 40, stagger: 0.15, duration: 0.6
-  });
-
-  // Testimonials
-  gsap.from(".testimonial-card", {
-    scrollTrigger: { trigger: "#testimonials", start: "top 80%" },
-    opacity: 0, y: 30, stagger: 0.15, duration: 0.6
   });
 </script>
 </body>
