@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Demo Library — Invictus AI</title>
+<style>
+  :root { --bg: #0a0b0d; --card: #13151a; --border: #1e2330; --accent: #14b8a6; --text: #e2e8f0; --text2: #94a3b8; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', system-ui, sans-serif; min-height: 100vh; }
+  .container { max-width: 960px; margin: 0 auto; padding: 40px 20px; }
+  .header { text-align: center; margin-bottom: 48px; }
+  .header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
+  .header p { font-size: 14px; color: var(--text2); }
+  .badge { display: inline-block; background: rgba(20,184,166,0.15); color: var(--accent); font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; transition: all 0.2s; }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+  .card-img { width: 100%; height: 180px; background: linear-gradient(135deg, #1a1c23, #2a2d38); display: flex; align-items: center; justify-content: center; font-size: 48px; }
+  .card-body { padding: 16px; }
+  .card-num { font-size: 10px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
+  .card-title { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+  .card-desc { font-size: 12px; color: var(--text2); line-height: 1.6; margin-bottom: 12px; }
+  .card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+  .tag { font-size: 10px; padding: 3px 8px; border-radius: 4px; background: rgba(255,255,255,0.06); color: var(--text2); }
+  .btn { display: inline-block; padding: 8px 20px; background: var(--accent); color: #000; font-size: 12px; font-weight: 700; border-radius: 6px; text-decoration: none; transition: all 0.15s; }
+  .btn:hover { background: #0d9488; }
+  .footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text2); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="badge">🦷 Dental Niche · 5 Variants</div>
+    <h1>Dental Clinic Demo Library</h1>
+    <p>Premium website templates for dental clinics in Pune. Pick a design, we customize it for your practice in 3 days.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="card-img">🦷</div>
+      <div class="card-body">
+        <div class="card-num">Demo 01</div>
+        <div class="card-title">Bright Smile — Teal & Gold</div>
+        <div class="card-desc">Modern dental clinic theme with GSAP animations, appointment booking, Google Maps embed, WhatsApp float. Designed for Kothrud/Baner area clinics.</div>
+        <div class="card-tags">
+          <span class="tag">Teal Theme</span>
+          <span class="tag">Animations</span>
+          <span class="tag">Booking Form</span>
+        </div>
+        <a href="./01-bright-smile-teal/" class="btn">View Demo →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🏥</div>
+      <div class="card-body">
+        <div class="card-num">Demo 02</div>
+        <div class="card-title">Navy Modern — Deep Navy & White</div>
+        <div class="card-desc">Clean, professional design with deep navy palette. Trust signals, team section, service cards. Best for established multi-doctor clinics.</div>
+        <div class="card-tags">
+          <span class="tag">Navy Theme</span>
+          <span class="tag">Professional</span>
+          <span class="tag">Trust Signals</span>
+        </div>
+        <a href="./02-navy-modern/" class="btn">View Demo →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🌸</div>
+      <div class="card-body">
+        <div class="card-num">Demo 03</div>
+        <div class="card-title">Coral Cream — Warm & Friendly</div>
+        <div class="card-desc">Warm coral and cream palette. Approachable feel for family dental clinics. Kid-friendly vibe with soft colors and rounded elements.</div>
+        <div class="card-tags">
+          <span class="tag">Coral Theme</span>
+          <span class="tag">Family-Friendly</span>
+          <span class="tag">Warm</span>
+        </div>
+        <a href="./03-coral-cream/" class="btn">View Demo →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">🌿</div>
+      <div class="card-body">
+        <div class="card-num">Demo 04</div>
+        <div class="card-title">Forest Green — Natural & Calm</div>
+        <div class="card-desc">Forest green and sand tones. Organic, calming aesthetic. Perfect for holistic dental practices or clinics emphasizing natural treatments.</div>
+        <div class="card-tags">
+          <span class="tag">Green Theme</span>
+          <span class="tag">Holistic</span>
+          <span class="tag">Calm</span>
+        </div>
+        <a href="./04-forest-green/" class="btn">View Demo →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-img">💜</div>
+      <div class="card-body">
+        <div class="card-num">Demo 05</div>
+        <div class="card-title">Dark Purple — Premium Studio</div>
+        <div class="card-desc">Dark purple luxury theme. High-end cosmetic dentistry feel. Veneers, implants, smile makeovers. For premium clinics in Koregaon Park / Baner.</div>
+        <div class="card-tags">
+          <span class="tag">Purple Theme</span>
+          <span class="tag">Premium</span>
+          <span class="tag">Cosmetic</span>
+        </div>
+        <a href="./05-dark-purple/" class="btn">View Demo →</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Invictus AI — Premium websites for dental clinics. Starting at ₹8,000.</p>
+    <p style="margin-top:8px;">Contact: WhatsApp or visit <a href="https://invictus-ai.in" style="color:var(--accent);">invictus-ai.in</a></p>
+  </div>
+</div>
+</body>
+</html>
