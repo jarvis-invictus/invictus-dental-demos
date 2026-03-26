@@ -4,13 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sunshine Dental Studio — Koregaon Park, Pune</title>
+<meta name="description" content="Sunshine Dental Studio in Koregaon Park, Pune. Premium dental care in the heart of Pune. Cosmetic, restorative & preventive dentistry. Book your consultation.">
+<meta name="keywords" content="dental studio koregaon park, dentist pune, cosmetic dentistry, dental clinic pune">
+<meta property="og:title" content="Sunshine Dental Studio — Koregaon Park, Pune">
+<meta property="og:description" content="Sunshine Dental Studio in Koregaon Park, Pune. Premium dental care in the heart of Pune. Cosmetic, restorative & preventive dentistry. Book your consultation.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffbb08f5d7d?w=1200">
+<link rel="canonical" href="https://sunshinedentalstudio.in/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Sunshine Dental Studio",
+  "description": "Premium dental care in Koregaon Park, Pune. Cosmetic, restorative & preventive dentistry.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lane 5, Koregaon Park",
+    "addressLocality": "Koregaon Park",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411001",
+    "addressCountry": "IN"
+  },
+  "telephone": "02076543210",
+  "url": "https://sunshinedentalstudio.in",
+  "openingHours": "Mo-Sa 09:00-20:00",
+  "priceRange": "₹₹",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "18.5362",
+    "longitude": "73.8939"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "312"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What dental services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sunshine Dental Studio in Koregaon Park offers root canals, teeth whitening, dental implants, Invisalign clear aligners, kids dentistry, smile makeovers, veneers, and routine scaling & cleaning. Dr. Sunita Joshi handles all cosmetic and restorative procedures personally."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you accept dental insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We provide detailed receipts and treatment summaries for insurance reimbursement. Direct insurance billing is not available, but most employer-sponsored mediclaim plans reimburse dental treatments. We also offer 0% EMI options on treatments above ₹10,000."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a root canal cost in Pune?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Root canal treatment at Sunshine Dental Studio in Koregaon Park starts from ₹3,000. Same-day RCT is available using our advanced rotary system. The total cost depends on whether a crown is needed afterwards and the tooth's complexity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are your clinic timings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We are open Monday to Saturday from 9:00 AM to 8:00 PM. Same-day appointments are often available. We are located at Lane 5, Koregaon Park, Pune. You can also WhatsApp us for quick booking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you treat children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! Kids dentistry is one of our specialties. Dr. Sunita Joshi is known for making children love visiting the dentist with a gentle, fun approach. We handle preventive care, fillings, fluoride treatments, and early orthodontic assessments for children from age 3 onwards. First visit starts from ₹500."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'DM Sans', sans-serif; }
-  h1,h2,h3,h4 { font-family: 'DM Serif Display', serif; }
+  body { font-family: 'Lato', sans-serif; }
+  h1,h2,h3,h4 { font-family: 'Nunito', sans-serif; }
   :root {
     --coral: #E8553E;
     --coral-dark: #c94530;
@@ -29,7 +114,7 @@
   .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(232,85,62,0.15); }
   nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
   .badge { background: rgba(232,85,62,0.1); color: var(--coral); padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; display: inline-block; }
-  .number-big { font-family: 'DM Serif Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--coral); }
+  .number-big { font-family: 'Nunito', sans-serif; font-size: 2.8rem; font-weight: 900; color: var(--coral); }
   .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.2s; text-decoration: none; }
   .whatsapp-btn:hover { transform: scale(1.1); }
   .wave { clip-path: ellipse(100% 60% at 50% 40%); }
@@ -45,7 +130,7 @@
     <div class="flex items-center gap-2">
       <span style="font-size:2rem;">☀️</span>
       <div>
-        <div class="font-black coral" style="font-size:1.2rem; font-family:'DM Serif Display',serif;">Sunshine Dental</div>
+        <div class="font-black coral" style="font-size:1.2rem; font-family:'Nunito',sans-serif;">Sunshine Dental</div>
         <div class="text-xs text-gray-400">Koregaon Park, Pune</div>
       </div>
     </div>
@@ -64,7 +149,7 @@
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     <div class="flex-1" id="hero-text">
       <div class="badge mb-6">🎉 Free Consultation for New Patients</div>
-      <h1 style="font-size:3.5rem; font-weight:900; line-height:1.1; font-family:'DM Serif Display',serif;" class="text-gray-900 mb-5">
+      <h1 style="font-size:3.5rem; font-weight:900; line-height:1.1; font-family:'Nunito',sans-serif;" class="text-gray-900 mb-5">
         A Smile You'll<br><span class="coral">Love Forever</span>
       </h1>
       <p class="text-gray-500 text-lg mb-8 leading-relaxed max-w-md">
@@ -85,7 +170,7 @@
         <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Sunny dental clinic" style="width:100%; height:100%; object-fit:cover; mix-blend-mode:multiply; opacity:0.85;">
       </div>
       <div style="position:absolute; bottom:10px; right:30px; background:white; border-radius:16px; padding:14px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.12);">
-        <div class="font-black coral" style="font-family:'DM Serif Display',serif; font-size:1.5rem;">4.9 ⭐</div>
+        <div class="font-black coral" style="font-family:'Nunito',sans-serif; font-size:1.5rem;">4.9 ⭐</div>
         <div class="text-xs text-gray-400 font-semibold">300+ Google Reviews</div>
       </div>
     </div>
@@ -107,43 +192,43 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <div class="badge mb-4">Our Specialties</div>
-      <h2 style="font-size:2.4rem; font-family:'DM Serif Display',serif; font-weight:800;" class="text-gray-900">Everything Your Smile Needs</h2>
+      <h2 style="font-size:2.4rem; font-family:'Nunito',sans-serif; font-weight:800;" class="text-gray-900">Everything Your Smile Needs</h2>
       <p class="text-gray-400 mt-3 max-w-lg mx-auto">Gentle treatments for every stage of life — kids to seniors.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="card">
-        <div style="margin-bottom:12px; color:var(--coral);"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3C9.5 3 7 5 7 7.5c0 1 .5 2 .5 3.5 0 3-1.5 5-1.5 7.5 0 1.5.5 2.5 2 2.5 1 0 2-1 2.5-2.5h3c.5 1.5 1.5 2.5 2.5 2.5 1.5 0 2-1 2-2.5 0-2.5-1.5-4.5-1.5-7.5 0-1.5.5-2.5.5-3.5C17 5 14.5 3 12 3z"/></svg></div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Root Canal</h3>
+        <div style="font-size:2.5rem; margin-bottom:12px;">🦷</div>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Root Canal</h3>
         <p class="text-gray-500 text-sm mb-4">Completely painless using advanced rotary system. Same-day treatment available.</p>
         <span class="coral font-bold text-sm">From ₹3,000</span>
       </div>
       <div class="card" style="background:var(--cream);">
-        <div style="margin-bottom:12px; color:var(--coral);"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3C9.5 3 7 5 7 7.5c0 1 .5 2 .5 3.5 0 3-1.5 5-1.5 7.5 0 1.5.5 2.5 2 2.5 1 0 2-1 2.5-2.5h3c.5 1.5 1.5 2.5 2.5 2.5 1.5 0 2-1 2-2.5 0-2.5-1.5-4.5-1.5-7.5 0-1.5.5-2.5.5-3.5C17 5 14.5 3 12 3z"/></svg></div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Teeth Whitening</h3>
+        <div style="font-size:2.5rem; margin-bottom:12px;">✨</div>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Teeth Whitening</h3>
         <p class="text-gray-500 text-sm mb-4">Hollywood smile in 1 hour. Safe laser whitening with long-lasting results.</p>
         <span class="coral font-bold text-sm">From ₹5,500</span>
       </div>
       <div class="card">
-        <div style="margin-bottom:12px; color:var(--coral);"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3C9.5 3 7 5 7 7.5c0 1 .5 2 .5 3.5 0 3-1.5 5-1.5 7.5 0 1.5.5 2.5 2 2.5 1 0 2-1 2.5-2.5h3c.5 1.5 1.5 2.5 2.5 2.5 1.5 0 2-1 2-2.5 0-2.5-1.5-4.5-1.5-7.5 0-1.5.5-2.5.5-3.5C17 5 14.5 3 12 3z"/></svg></div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Implants</h3>
+        <div style="font-size:2.5rem; margin-bottom:12px;">🔩</div>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Implants</h3>
         <p class="text-gray-500 text-sm mb-4">Swiss precision implants with 98% success rate. Feels just like real teeth.</p>
         <span class="coral font-bold text-sm">From ₹22,000</span>
       </div>
       <div class="card" style="background:var(--cream);">
-        <div style="margin-bottom:12px; color:var(--coral);"><svg width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8M8 12h8"/></svg></div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Invisalign</h3>
+        <div style="font-size:2.5rem; margin-bottom:12px;">😬</div>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Invisalign</h3>
         <p class="text-gray-500 text-sm mb-4">Clear, removable aligners. Straighten teeth invisibly — no metal, no pain.</p>
         <span class="coral font-bold text-sm">From ₹35,000</span>
       </div>
       <div class="card">
         <div style="font-size:2.5rem; margin-bottom:12px;">👶</div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Kids Dentistry</h3>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Kids Dentistry</h3>
         <p class="text-gray-500 text-sm mb-4">Gentle, fun dental care for children. We make kids love visiting the dentist!</p>
         <span class="coral font-bold text-sm">From ₹500</span>
       </div>
       <div class="card" style="background:var(--cream);">
         <div style="font-size:2.5rem; margin-bottom:12px;">💫</div>
-        <h3 class="font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">Smile Makeover</h3>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Smile Makeover</h3>
         <p class="text-gray-500 text-sm mb-4">Complete smile transformation with veneers, whitening & contouring.</p>
         <span class="coral font-bold text-sm">Custom Quote</span>
       </div>
@@ -156,7 +241,7 @@
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
     <div class="flex-1">
       <div class="badge mb-4">Your Doctor</div>
-      <h2 style="font-size:2.2rem; font-family:'DM Serif Display',serif; font-weight:800;" class="mb-4">Dr. Sunita Joshi<br><span class="coral">BDS, MDS</span></h2>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;" class="mb-4">Dr. Sunita Joshi<br><span class="coral">BDS, MDS</span></h2>
       <p class="text-gray-500 mb-6 leading-relaxed">With 12 years of experience and a gentle touch, Dr. Sunita has helped over 3,000 patients rediscover the joy of smiling. She believes dentistry should be a comfortable, even pleasant experience.</p>
       <div class="space-y-3 text-sm">
         <div class="flex items-center gap-3"><span class="coral font-bold">✓</span> MDS – Conservative Dentistry, Symbiosis Pune</div>
@@ -176,7 +261,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <div class="badge mb-4">Patient Love</div>
-      <h2 style="font-size:2.2rem; font-family:'DM Serif Display',serif; font-weight:800;">Real Smiles, Real Stories</h2>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Real Smiles, Real Stories</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="card">
@@ -206,7 +291,7 @@
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-10">
       <div class="badge mb-4">Get Started</div>
-      <h2 style="font-size:2.2rem; font-family:'DM Serif Display',serif; font-weight:800;">Book Your Free Consultation</h2>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Book Your Free Consultation</h2>
       <p class="text-gray-500 mt-2">No pressure. Just a friendly chat and checkup.</p>
     </div>
     <form class="bg-white rounded-2xl p-8 shadow-lg">
@@ -235,8 +320,40 @@
           <input type="date" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none">
         </div>
       </div>
-      <button type="submit" class="btn-coral w-full text-center py-4 rounded-xl font-black" style="font-family:'DM Serif Display',serif; font-size:1.05rem;">Book My Free Consultation ✨</button>
+      <button type="submit" class="btn-coral w-full text-center py-4 rounded-xl font-black" style="font-family:'Nunito',sans-serif; font-size:1.05rem;">Book My Free Consultation ✨</button>
     </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 px-6" id="faq">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14">
+      <div class="badge mb-4">Got Questions?</div>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-4">
+      <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">What dental services do you offer?</summary>
+        <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Sunshine Dental Studio in Koregaon Park offers root canals, teeth whitening, dental implants, Invisalign clear aligners, kids dentistry, smile makeovers, veneers, and routine scaling & cleaning. Dr. Sunita Joshi handles all cosmetic and restorative procedures personally.</div>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">Do you accept dental insurance?</summary>
+        <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">We provide detailed receipts and treatment summaries for insurance reimbursement. Direct insurance billing is not available, but most employer-sponsored mediclaim plans reimburse dental treatments. We also offer 0% EMI options on treatments above ₹10,000.</div>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">How much does a root canal cost in Pune?</summary>
+        <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Root canal treatment at Sunshine Dental Studio in Koregaon Park starts from ₹3,000. Same-day RCT is available using our advanced rotary system. The total cost depends on whether a crown is needed afterwards and the tooth's complexity.</div>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">What are your clinic timings?</summary>
+        <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">We are open Monday to Saturday from 9:00 AM to 8:00 PM. Same-day appointments are often available. We are located at Lane 5, Koregaon Park, Pune. You can also WhatsApp us for quick booking.</div>
+      </details>
+      <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">Do you treat children?</summary>
+        <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Absolutely! Kids dentistry is one of our specialties. Dr. Sunita Joshi is known for making children love visiting the dentist with a gentle, fun approach. We handle preventive care, fillings, fluoride treatments, and early orthodontic assessments for children from age 3 onwards. First visit starts from ₹500.</div>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -244,7 +361,7 @@
 <footer style="background:#2a2a2a;" class="text-gray-400 py-10 px-6">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8">
     <div>
-      <div class="text-white font-black text-lg mb-2" style="font-family:'DM Serif Display',serif;">☀️ Sunshine Dental Studio</div>
+      <div class="text-white font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">☀️ Sunshine Dental Studio</div>
       <p class="text-sm max-w-xs">Warm, gentle dental care in Koregaon Park. Where smiles are made.</p>
     </div>
     <div>
