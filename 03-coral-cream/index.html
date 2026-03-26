@@ -10,7 +10,8 @@
 <meta property="og:description" content="Sunshine Dental Studio in Koregaon Park, Pune. Premium dental care in the heart of Pune. Cosmetic, restorative & preventive dentistry. Book your consultation.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffbb08f5d7d?w=1200">
-<link rel="canonical" href="https://sunshinedentalstudio.in/">
+<link rel="canonical" href="https://invictus-dental-demos.vercel.app/03-coral-cream/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,7 +84,7 @@
       "name": "Do you treat children?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Absolutely! Kids dentistry is one of our specialties. Dr. Sunita Joshi is known for making children love visiting the dentist with a gentle, fun approach. We handle preventive care, fillings, fluoride treatments, and early orthodontic assessments for children from age 3 onwards. First visit starts from Rs 500."
+        "text": "Absolutely! Kids dentistry is one of our specialties. Dr. Sunita Joshi is known for making children comfortable at the dentist with a gentle, friendly approach. We handle preventive care, fillings, fluoride treatments, and early orthodontic assessments for children from age 3 onwards. First visit starts from Rs 500."
       }
     }
   ]
@@ -92,10 +93,10 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  body { font-family: 'DM Sans', sans-serif; }
-  h1,h2,h3,h4 { font-family: 'DM Serif Display', serif; }
+  body { font-family: 'Lato', sans-serif; }
+  h1,h2,h3,h4 { font-family: 'Nunito', sans-serif; }
   :root {
     --coral: #E8553E;
     --coral-dark: #c94530;
@@ -114,77 +115,29 @@
   .card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(232,85,62,0.15); }
   nav { position: sticky; top: 0; z-index: 100; background: white; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
   .badge { background: rgba(232,85,62,0.1); color: var(--coral); padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; display: inline-block; }
-
-  /* Service icon circles */
-  .service-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background: rgba(232,85,62,0.1);
-    color: var(--coral);
-    font-weight: 700;
-    font-size: 0.85rem;
-    letter-spacing: 0.02em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    font-family: 'DM Sans', sans-serif;
-  }
-
-  /* Hero stat callout */
-  .hero-stat-callout {
-    border-left: 3px solid var(--coral);
-    padding: 0.75rem 1.25rem;
-    background: white;
-    border-radius: 0 8px 8px 0;
-    display: inline-block;
-  }
-  .hero-stat-callout .stat-big {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.6rem;
-    color: var(--coral);
-    line-height: 1.2;
-  }
-  .hero-stat-callout .stat-label {
-    font-size: 0.85rem;
-    color: #666;
-  }
-
-  /* Logo mark */
-  .logo-mark {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: var(--coral);
-    color: white;
-    font-weight: 700;
-    font-size: 0.75rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'DM Sans', sans-serif;
-    flex-shrink: 0;
-  }
-
-  /* About section */
-  .about-clinic-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
-  }
-  @media (max-width: 768px) {
-    .about-clinic-grid { grid-template-columns: 1fr; }
-  }
-
-  .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.2s; text-decoration: none; font-family: 'DM Sans', sans-serif; }
+  .number-big { font-family: 'Nunito', sans-serif; font-size: 2.8rem; font-weight: 900; color: white; }
+  .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.2s; text-decoration: none; font-family: 'Lato', sans-serif; }
   .whatsapp-btn:hover { transform: scale(1.1); }
+  /* Service icon circles — no emoji */
+  .service-icon {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(232,85,62,0.1); color: var(--coral);
+    font-weight: 800; font-size: 0.8rem; letter-spacing: 0.03em;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem; font-family: 'Nunito', sans-serif;
+  }
+  /* Logo mark — no emoji */
+  .logo-mark {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--coral); color: white; font-weight: 900;
+    font-size: 0.8rem; display: flex; align-items: center;
+    justify-content: center; font-family: 'Nunito', sans-serif; flex-shrink: 0;
+  }
 </style>
 </head>
 <body class="bg-white text-gray-900">
 
-<a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">WA</a>
+<a href="https://wa.me/919823051234" class="whatsapp-btn" target="_blank">WA</a>
 
 <!-- NAV -->
 <nav>
@@ -192,7 +145,7 @@
     <div class="flex items-center gap-2">
       <div class="logo-mark">SD</div>
       <div>
-        <div class="font-bold coral" style="font-size:1.2rem;">Sunshine Dental</div>
+        <div class="font-black coral" style="font-size:1.2rem; font-family:'Nunito',sans-serif;">Sunshine Dental</div>
         <div class="text-xs text-gray-400">Koregaon Park, Pune</div>
       </div>
     </div>
@@ -202,7 +155,21 @@
       <a href="#testimonials" class="hover:text-red-500 transition-colors">Reviews</a>
       <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
     </div>
-    <a href="tel:02076543210" class="btn-coral text-sm">Call or WhatsApp Us &rarr;</a>
+    <a href="#book" class="btn-coral text-sm hidden md:inline-block">Book Free Consult</a>
+    <!-- Mobile hamburger -->
+    <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+      <span class="block w-6 h-0.5 bg-gray-700"></span>
+      <span class="block w-6 h-0.5 bg-gray-700"></span>
+      <span class="block w-6 h-0.5 bg-gray-700"></span>
+    </button>
+  </div>
+  <!-- Mobile menu dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+    <a href="#services" class="block text-sm font-semibold text-gray-700 py-2 border-b border-gray-50">Services</a>
+    <a href="#about" class="block text-sm font-semibold text-gray-700 py-2 border-b border-gray-50">About</a>
+    <a href="#testimonials" class="block text-sm font-semibold text-gray-700 py-2 border-b border-gray-50">Reviews</a>
+    <a href="#contact" class="block text-sm font-semibold text-gray-700 py-2 border-b border-gray-50">Contact</a>
+    <a href="#book" class="btn-coral block text-center mt-3">Book Free Consult</a>
   </div>
 </nav>
 
@@ -211,40 +178,41 @@
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
     <div class="flex-1" id="hero-text">
       <div class="badge mb-6">Free Consultation for New Patients</div>
-      <h1 style="font-size:3.5rem; font-weight:400; line-height:1.1;" class="text-gray-900 mb-5">
+      <h1 style="font-size:3.5rem; font-weight:900; line-height:1.1; font-family:'Nunito',sans-serif;" class="text-gray-900 mb-5">
         A Smile You'll<br><span class="coral">Love Forever</span>
       </h1>
       <p class="text-gray-500 text-lg mb-8 leading-relaxed max-w-md">
         Warm, gentle care in a stress-free environment. Dr. Sunita Joshi has spent 12 years making dental visits something people actually look forward to.
       </p>
-      <div class="flex flex-wrap gap-4 mb-8">
-        <a href="tel:02076543210" class="btn-coral">Call or WhatsApp Us &rarr;</a>
-        <a href="tel:02076543210" class="btn-outline">020-7654-3210</a>
+      <div class="flex flex-wrap gap-4 mb-10">
+        <a href="#book" class="btn-coral">Book Free Consult</a>
+        <a href="tel:02076543210" class="btn-outline">Call Us</a>
       </div>
-      <div class="hero-stat-callout">
-        <div class="stat-big">3,000+</div>
-        <div class="stat-label">Happy patients in Koregaon Park since 2014.</div>
+      <div class="flex flex-wrap gap-6 text-sm text-gray-500 font-semibold">
+        <span>Anxiety-Free Treatment</span>
+        <span>0% EMI Available</span>
+        <span>Same-Day Appointments</span>
       </div>
     </div>
     <div class="flex-1 relative flex justify-center">
       <div style="background:var(--coral); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; width:380px; height:420px; position:relative; overflow:hidden;">
-        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Sunny dental clinic" style="width:100%; height:100%; object-fit:cover; mix-blend-mode:multiply; opacity:0.85;">
+        <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=500&q=80" alt="Sunshine Dental clinic interior, Koregaon Park" style="width:100%; height:100%; object-fit:cover; mix-blend-mode:multiply; opacity:0.85;">
       </div>
       <div style="position:absolute; bottom:10px; right:30px; background:white; border-radius:16px; padding:14px 20px; box-shadow:0 8px 24px rgba(0,0,0,0.12);">
-        <div class="font-bold coral" style="font-size:1.5rem;">4.9 / 5</div>
+        <div class="font-black coral" style="font-family:'Nunito',sans-serif; font-size:1.5rem;">4.9 / 5</div>
         <div class="text-xs text-gray-400 font-semibold">300+ Google Reviews</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT THE PRACTICE (replaces animated stats) -->
-<section class="py-16 px-6 bg-coral">
-  <div class="max-w-4xl mx-auto text-center text-white">
-    <h2 style="font-size:1.8rem; font-weight:400;" class="mb-4">Twelve years of gentle dentistry in Koregaon Park</h2>
-    <p class="text-sm opacity-90 max-w-2xl mx-auto leading-relaxed">
-      Dr. Sunita Joshi started Sunshine Dental Studio in 2014 with a simple idea: dental visits don't have to be scary. Over 3,000 patients later, the studio is known for its warm atmosphere, same-day appointments, and emergency care within 48 hours. Most patients come back every six months &mdash; and they bring their families.
-    </p>
+<!-- STATS -->
+<section class="py-12 px-6 bg-coral">
+  <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+    <div><div class="number-big">12+</div><div class="text-sm opacity-80">Years Practice</div></div>
+    <div><div class="number-big">3K+</div><div class="text-sm opacity-80">Happy Smiles</div></div>
+    <div><div class="number-big">4.9</div><div class="text-sm opacity-80">Star Rating</div></div>
+    <div><div class="number-big">48h</div><div class="text-sm opacity-80">Emergency Care</div></div>
   </div>
 </section>
 
@@ -253,44 +221,44 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <div class="badge mb-4">Our Specialties</div>
-      <h2 style="font-size:2.4rem;" class="text-gray-900">Everything Your Smile Needs</h2>
+      <h2 style="font-size:2.4rem; font-family:'Nunito',sans-serif; font-weight:800;" class="text-gray-900">Everything Your Smile Needs</h2>
       <p class="text-gray-400 mt-3 max-w-lg mx-auto">Gentle treatments for every stage of life &mdash; kids to seniors.</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="card service-card">
+      <div class="card">
         <div class="service-icon">RC</div>
-        <h3 class="font-bold text-lg mb-2">Root Canal</h3>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Root Canal</h3>
         <p class="text-gray-500 text-sm mb-4">Completely painless using advanced rotary system. Same-day treatment available.</p>
         <span class="coral font-bold text-sm">From &#8377;3,000</span>
       </div>
-      <div class="card service-card" style="background:var(--cream);">
+      <div class="card" style="background:var(--cream);">
         <div class="service-icon">TW</div>
-        <h3 class="font-bold text-lg mb-2">Teeth Whitening</h3>
-        <p class="text-gray-500 text-sm mb-4">Professional whitening in 1 hour. Safe laser treatment with long-lasting results.</p>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Teeth Whitening</h3>
+        <p class="text-gray-500 text-sm mb-4">Hollywood smile in 1 hour. Safe laser whitening with long-lasting results.</p>
         <span class="coral font-bold text-sm">From &#8377;5,500</span>
       </div>
-      <div class="card service-card">
+      <div class="card">
         <div class="service-icon">DI</div>
-        <h3 class="font-bold text-lg mb-2">Implants</h3>
-        <p class="text-gray-500 text-sm mb-4">Precision implants with 98% success rate. Feels just like real teeth.</p>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Implants</h3>
+        <p class="text-gray-500 text-sm mb-4">Swiss precision implants with 98% success rate. Feels just like real teeth.</p>
         <span class="coral font-bold text-sm">From &#8377;22,000</span>
       </div>
-      <div class="card service-card" style="background:var(--cream);">
+      <div class="card" style="background:var(--cream);">
         <div class="service-icon">IA</div>
-        <h3 class="font-bold text-lg mb-2">Invisalign</h3>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Invisalign</h3>
         <p class="text-gray-500 text-sm mb-4">Clear, removable aligners. Straighten teeth invisibly &mdash; no metal, no pain.</p>
         <span class="coral font-bold text-sm">From &#8377;35,000</span>
       </div>
-      <div class="card service-card">
+      <div class="card">
         <div class="service-icon">KD</div>
-        <h3 class="font-bold text-lg mb-2">Kids Dentistry</h3>
-        <p class="text-gray-500 text-sm mb-4">Gentle, friendly care for children. We make kids comfortable at the dentist.</p>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Kids Dentistry</h3>
+        <p class="text-gray-500 text-sm mb-4">Gentle, fun dental care for children. We make kids comfortable at the dentist.</p>
         <span class="coral font-bold text-sm">From &#8377;500</span>
       </div>
-      <div class="card service-card" style="background:var(--cream);">
+      <div class="card" style="background:var(--cream);">
         <div class="service-icon">SM</div>
-        <h3 class="font-bold text-lg mb-2">Smile Makeover</h3>
-        <p class="text-gray-500 text-sm mb-4">Complete smile work with veneers, whitening &amp; contouring.</p>
+        <h3 class="font-black text-lg mb-2" style="font-family:'Nunito',sans-serif;">Smile Makeover</h3>
+        <p class="text-gray-500 text-sm mb-4">Complete smile work with veneers, whitening &amp; contouring. Built for your face.</p>
         <span class="coral font-bold text-sm">Custom Quote</span>
       </div>
     </div>
@@ -299,22 +267,20 @@
 
 <!-- ABOUT -->
 <section class="py-20 px-6 cream-bg" id="about">
-  <div class="max-w-6xl mx-auto">
-    <div class="about-clinic-grid">
-      <div>
-        <div class="badge mb-4">Your Doctor</div>
-        <h2 style="font-size:2.2rem;" class="mb-4">Dr. Sunita Joshi<br><span class="coral">BDS, MDS</span></h2>
-        <p class="text-gray-500 mb-6 leading-relaxed">With 12 years of experience and a gentle touch, Dr. Sunita has helped over 3,000 patients rediscover the joy of smiling. She believes dentistry should be a comfortable, even pleasant experience.</p>
-        <div class="space-y-3 text-sm">
-          <div class="flex items-center gap-3">MDS &mdash; Conservative Dentistry, Symbiosis Pune</div>
-          <div class="flex items-center gap-3">Certified Invisalign Provider</div>
-          <div class="flex items-center gap-3">Advanced Implantology Training, Singapore</div>
-          <div class="flex items-center gap-3">IDA &amp; ISOI Member</div>
-        </div>
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+    <div class="flex-1">
+      <div class="badge mb-4">Your Doctor</div>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;" class="mb-4">Dr. Sunita Joshi<br><span class="coral">BDS, MDS</span></h2>
+      <p class="text-gray-500 mb-6 leading-relaxed">With 12 years of experience and a gentle touch, Dr. Sunita has helped over 3,000 patients rediscover the joy of smiling. She believes dentistry should be a comfortable, even pleasant experience.</p>
+      <div class="space-y-3 text-sm">
+        <div class="flex items-center gap-3">MDS &mdash; Conservative Dentistry, Symbiosis Pune</div>
+        <div class="flex items-center gap-3">Certified Invisalign Provider</div>
+        <div class="flex items-center gap-3">Advanced Implantology Training, Singapore</div>
+        <div class="flex items-center gap-3">IDA &amp; ISOI Member</div>
       </div>
-      <div class="flex justify-center">
-        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80" alt="Dr. Sunita Joshi" class="rounded-2xl shadow-xl w-full max-w-sm object-cover" style="max-height:420px;">
-      </div>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&q=80" alt="Dr. Sunita Joshi, dentist at Sunshine Dental Studio" class="rounded-2xl shadow-xl w-full max-w-sm object-cover" style="max-height:420px;">
     </div>
   </div>
 </section>
@@ -323,15 +289,15 @@
 <section class="py-20 px-6" id="testimonials">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
-      <div class="badge mb-4">Patient Stories</div>
-      <h2 style="font-size:2.2rem;">Real Smiles, Real Stories</h2>
+      <div class="badge mb-4">Patient Love</div>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Real Smiles, Real Stories</h2>
       <p class="text-gray-500 mt-2">4.9 / 5 &mdash; Based on 312 Google Reviews</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div class="card">
         <div class="text-yellow-400 text-lg mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="text-gray-600 text-sm italic mb-4">"I was so scared of dentists but Dr. Sunita made me feel completely at ease. Best dental experience ever!"</p>
-        <div class="font-bold coral text-sm">Kavya M., KP</div>
+        <div class="font-bold coral text-sm">Kavya M., Koregaon Park</div>
       </div>
       <div class="card" style="background:var(--cream);">
         <div class="text-yellow-400 text-lg mb-3">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
@@ -351,38 +317,83 @@
 <section class="py-20 px-6 cream-bg" id="book">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-10">
-      <div class="badge mb-4">Get in Touch</div>
-      <h2 style="font-size:2.2rem;">Book Your Free Consultation</h2>
+      <div class="badge mb-4">Get Started</div>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Book Your Free Consultation</h2>
       <p class="text-gray-500 mt-2">No pressure. Just a friendly chat and checkup.</p>
     </div>
-    <form class="bg-white rounded-2xl p-8 shadow-lg">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
-        <div>
-          <label class="text-sm font-bold text-gray-700 block mb-2">Your Name</label>
-          <input type="text" placeholder="What should we call you?" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-400">
+    <form id="booking-form" class="bg-white rounded-2xl p-8 shadow-lg">
+      <div id="form-fields">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
+          <div>
+            <label class="text-sm font-bold text-gray-700 block mb-2">Your Name</label>
+            <input type="text" placeholder="What should we call you?" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-400" required>
+          </div>
+          <div>
+            <label class="text-sm font-bold text-gray-700 block mb-2">Phone Number</label>
+            <input type="tel" placeholder="+91 98230 51234" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-400" required>
+          </div>
+          <div>
+            <label class="text-sm font-bold text-gray-700 block mb-2">What brings you in?</label>
+            <select class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-400">
+              <option>General checkup</option>
+              <option>Root Canal</option>
+              <option>Teeth Whitening</option>
+              <option>Implants</option>
+              <option>Braces / Invisalign</option>
+              <option>Kids Dentistry</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm font-bold text-gray-700 block mb-2">Preferred Date</label>
+            <input type="date" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-red-400">
+          </div>
         </div>
-        <div>
-          <label class="text-sm font-bold text-gray-700 block mb-2">Phone Number</label>
-          <input type="tel" placeholder="+91 98765 43210" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none">
+        <button type="submit" class="btn-coral w-full text-center py-4 rounded-xl font-black" style="font-family:'Nunito',sans-serif; font-size:1.05rem;">Book My Free Consultation &rarr;</button>
+      </div>
+      <div id="form-success" class="hidden text-center py-8">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(232,85,62,0.12);display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;" class="coral font-black text-3xl">&#10003;</div>
+        <h3 class="font-black text-xl text-gray-900 mb-2" style="font-family:'Nunito',sans-serif;">We'll call you soon!</h3>
+        <p class="text-gray-500 text-sm">Thank you for booking. Dr. Sunita's team will confirm your appointment within a few hours.</p>
+        <p class="mt-4 text-xs text-gray-400">Or call directly: <a href="tel:02076543210" class="coral font-semibold">020-7654-3210</a></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- CONTACT + MAP -->
+<section class="py-20 px-6" id="contact">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="badge mb-4">Find Us</div>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Visit Sunshine Dental Studio</h2>
+      <p class="text-gray-500 mt-2">Lane 5, Koregaon Park, Pune &mdash; Mon&ndash;Sat 9AM to 8PM</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <!-- Map -->
+      <div class="rounded-2xl overflow-hidden shadow-lg" style="height:360px;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.1764882698!2d73.8915!3d18.5362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06b44210000%3A0x0!2sKoregaon+Park%2C+Pune%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1710000000000"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Sunshine Dental Studio location map">
+        </iframe>
+      </div>
+      <!-- Contact details -->
+      <div class="space-y-5">
+        <div class="card">
+          <div class="font-bold text-gray-900 mb-1">Address</div>
+          <p class="text-gray-500 text-sm">Lane 5, Koregaon Park<br>Pune, Maharashtra 411001</p>
         </div>
-        <div>
-          <label class="text-sm font-bold text-gray-700 block mb-2">What brings you in?</label>
-          <select class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none">
-            <option>General checkup</option>
-            <option>Root Canal</option>
-            <option>Teeth Whitening</option>
-            <option>Implants</option>
-            <option>Braces / Invisalign</option>
-            <option>Kids Dentistry</option>
-          </select>
+        <div class="card">
+          <div class="font-bold text-gray-900 mb-1">Phone &amp; WhatsApp</div>
+          <a href="tel:02076543210" class="coral font-bold block">020-7654-3210</a>
+          <a href="https://wa.me/919823051234" class="text-sm text-gray-500 hover:text-green-600 transition-colors" target="_blank">Chat on WhatsApp &rarr;</a>
         </div>
-        <div>
-          <label class="text-sm font-bold text-gray-700 block mb-2">Preferred Date</label>
-          <input type="date" class="w-full border-2 border-gray-100 rounded-xl px-4 py-3 text-sm focus:outline-none">
+        <div class="card">
+          <div class="font-bold text-gray-900 mb-1">Clinic Hours</div>
+          <p class="text-gray-500 text-sm">Monday &ndash; Saturday: 9:00 AM &ndash; 8:00 PM<br>Sunday: Closed<br><span class="coral font-semibold">Same-day appointments often available</span></p>
         </div>
       </div>
-      <button type="submit" class="btn-coral w-full text-center py-4 rounded-xl font-bold" style="font-size:1.05rem;">Book My Free Consultation &rarr;</button>
-    </form>
+    </div>
   </div>
 </section>
 
@@ -391,27 +402,27 @@
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-14">
       <div class="badge mb-4">Got Questions?</div>
-      <h2 style="font-size:2.2rem;">Frequently Asked Questions</h2>
+      <h2 style="font-size:2.2rem; font-family:'Nunito',sans-serif; font-weight:800;">Frequently Asked Questions</h2>
     </div>
     <div class="space-y-4">
       <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
-        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900">What dental services do you offer?</summary>
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">What dental services do you offer?</summary>
         <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Sunshine Dental Studio in Koregaon Park offers root canals, teeth whitening, dental implants, Invisalign clear aligners, kids dentistry, smile makeovers, veneers, and routine scaling &amp; cleaning. Dr. Sunita Joshi handles all cosmetic and restorative procedures personally.</div>
       </details>
       <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
-        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900">Do you accept dental insurance?</summary>
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">Do you accept dental insurance?</summary>
         <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">We provide detailed receipts and treatment summaries for insurance reimbursement. Direct insurance billing is not available, but most employer-sponsored mediclaim plans reimburse dental treatments. We also offer 0% EMI options on treatments above &#8377;10,000.</div>
       </details>
       <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
-        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900">How much does a root canal cost in Pune?</summary>
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">How much does a root canal cost in Pune?</summary>
         <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Root canal treatment at Sunshine Dental Studio in Koregaon Park starts from &#8377;3,000. Same-day RCT is available using our advanced rotary system. The total cost depends on whether a crown is needed afterwards and the tooth's complexity.</div>
       </details>
       <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
-        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900">What are your clinic timings?</summary>
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">What are your clinic timings?</summary>
         <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">We are open Monday to Saturday from 9:00 AM to 8:00 PM. Same-day appointments are often available. We are located at Lane 5, Koregaon Park, Pune. You can also WhatsApp us for quick booking.</div>
       </details>
       <details class="bg-white rounded-2xl shadow-sm overflow-hidden" style="border:2px solid #ffe0d6;">
-        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900">Do you treat children?</summary>
+        <summary class="px-6 py-4 cursor-pointer font-bold text-gray-900" style="font-family:'Nunito',sans-serif;">Do you treat children?</summary>
         <div class="px-6 pb-5 text-sm text-gray-600 leading-relaxed">Absolutely! Kids dentistry is one of our specialties. Dr. Sunita Joshi is known for making children comfortable at the dentist with a gentle, friendly approach. We handle preventive care, fillings, fluoride treatments, and early orthodontic assessments for children from age 3 onwards. First visit starts from &#8377;500.</div>
       </details>
     </div>
@@ -424,7 +435,7 @@
     <div>
       <div class="flex items-center gap-2 mb-2">
         <div class="logo-mark" style="width:30px;height:30px;font-size:0.65rem;">SD</div>
-        <span class="text-white font-bold text-lg">Sunshine Dental Studio</span>
+        <span class="text-white font-black text-lg" style="font-family:'Nunito',sans-serif;">Sunshine Dental Studio</span>
       </div>
       <p class="text-sm max-w-xs">Warm, gentle dental care in Koregaon Park. Where smiles are made.</p>
     </div>
@@ -447,6 +458,34 @@
   gsap.from("#hero-text", { opacity: 0, x: -50, duration: 1, ease: "power3.out" });
   gsap.utils.toArray(".card").forEach(function(card, i) {
     gsap.from(card, { opacity: 0, y: 30, duration: 0.6, delay: i * 0.1, scrollTrigger: { trigger: card, start: "top 85%" } });
+  });
+
+  // Mobile menu toggle
+  document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+
+  // Form — prevent default + show success
+  document.getElementById('booking-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('form-fields').classList.add('hidden');
+    document.getElementById('form-success').classList.remove('hidden');
+  });
+
+  // Form → WhatsApp
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name = this.querySelector('input[type="text"]');
+      var phone = this.querySelector('input[type="tel"]');
+      var msg = 'Hi, I would like to book an appointment at Sunshine Dental Studio.' + (name && name.value ? ' My name is ' + name.value + '.' : '') + (phone && phone.value ? ' My number is ' + phone.value + '.' : '');
+      window.open('https://wa.me/919823051234?text=' + encodeURIComponent(msg), '_blank');
+    });
   });
 </script>
 </body>
