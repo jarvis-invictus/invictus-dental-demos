@@ -1,237 +1,1743 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GreenLeaf Dental Wellness — Viman Nagar, Pune</title>
-<meta name="description" content="GreenLeaf Dental Wellness in Viman Nagar, Pune. Holistic dental care for your whole family. Gentle treatments, modern clinic. Same-day appointments available.">
-<meta name="keywords" content="dental clinic viman nagar, family dentist pune, gentle dentistry, dental wellness pune">
-<meta property="og:title" content="GreenLeaf Dental Wellness — Viman Nagar, Pune">
-<meta property="og:description" content="GreenLeaf Dental Wellness in Viman Nagar, Pune. Holistic dental care for your whole family. Gentle treatments, modern clinic. Same-day appointments available.">
-<meta property="og:type" content="website">
-<link rel="canonical" href="https://invictus-dental-demos.vercel.app/04-forest-green/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Dentist",
- "name": "GreenLeaf Dental Wellness",
- "address": {
- "@type": "PostalAddress",
- "addressLocality": "Pune",
- "addressRegion": "Maharashtra",
- "addressCountry": "IN"
- },
- "url": "https://invictus-ai.in"
-}
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
- body { font-family: 'Source Sans Pro', sans-serif; background: #FFFDF8; }
- h1,h2,h3,h4 { font-family: 'Merriweather', serif; }
- :root {
- --green: #2D6A4F;
- --green-dark: #1e4d38;
- --green-light: #52B788;
- --green-pale: #D8F3DC;
- --sand: #F9F3E3;
- --sand-dark: #EDE3CC;
- --brown: #5C4033;
- }
- .green { color: var(--green); }
- .bg-green { background-color: var(--green); }
- .pale-green { background-color: var(--green-pale); }
- .sand-bg { background-color: var(--sand); }
- .btn-green { background-color: var(--green); color: white; padding: 14px 32px; border-radius: 4px; font-weight: 700; cursor: pointer; transition: all 0.2s; display: inline-block; font-family: 'Source Sans Pro', sans-serif; letter-spacing: 0.02em; }
- .btn-green:hover { background-color: var(--green-dark); box-shadow: 0 6px 20px rgba(45,106,79,0.3); }
- .btn-outline { border: 2px solid var(--green); color: var(--green); padding: 12px 30px; border-radius: 4px; font-weight: 700; cursor: pointer; transition: all 0.2s; display: inline-block; }
- .btn-outline:hover { background-color: var(--green); color: white; }
- .card { background: white; border-radius: 8px; padding: 28px; border: 1px solid var(--green-pale); transition: all 0.25s; }
- .card:hover { box-shadow: 0 12px 32px rgba(45,106,79,0.12); transform: translateY(-4px); }
- nav { position: sticky; top: 0; z-index: 100; background: white; border-bottom: 2px solid var(--green-pale); }
- .leaf-tag { background: var(--green-pale); color: var(--green); padding: 5px 14px; border-radius: 4px; font-size: 0.8rem; font-weight: 700; display: inline-block; font-family: 'Source Sans Pro', sans-serif; }
- .whatsapp-btn { position: fixed; bottom: 28px; right: 28px; z-index: 999; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 28px; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: all 0.2s; text-decoration: none; }
- .whatsapp-btn:hover { transform: scale(1.1); }
- .stat-item { border-left: 3px solid var(--green-light); padding-left: 16px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mehta's Dental Clinic | Trusted Family Dentistry Since 1998 | Sadashiv Peth, Pune</title>
+    <meta name="description" content="Dr. Mehta's Dental Clinic in Sadashiv Peth, Pune — 26 years of excellence in family dentistry. Trusted by 3 generations. Comprehensive dental care with a classic professional approach.">
+    <meta name="keywords" content="dentist Pune, dental clinic Sadashiv Peth, Dr Mehta dentist, family dentistry Pune, root canal Pune, dental implants Pune">
+    <meta name="author" content="Dr. Mehta's Dental Clinic">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:title" content="Dr. Mehta's Dental Clinic | Trusted Since 1998">
+    <meta property="og:description" content="26 years of excellence in family dentistry. Trusted by 3 generations of Pune families. Visit us at Sadashiv Peth.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop">
+    <meta property="og:url" content="https://drmehta-dental.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. Mehta's Dental Clinic | Trusted Since 1998">
+    <meta name="twitter:description" content="26 years of excellence in family dentistry at Sadashiv Peth, Pune. Comprehensive dental care for the whole family.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1200&h=630&fit=crop">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Dr. Mehta's Dental Clinic",
+        "description": "Trusted family dental clinic in Sadashiv Peth, Pune since 1998. 26 years of excellence in comprehensive dental care.",
+        "url": "https://drmehta-dental.com",
+        "telephone": "+912024001234",
+        "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Plot No. 42, Near Vishrambaug Wada, Sadashiv Peth",
+            "addressLocality": "Pune",
+            "addressRegion": "Maharashtra",
+            "postalCode": "411030",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "18.5130",
+            "longitude": "73.8530"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "09:30",
+                "closes": "13:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+                "opens": "17:00",
+                "closes": "21:00"
+            }
+        ],
+        "priceRange": "₹₹",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1240"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Dr. Rajesh Mehta",
+            "jobTitle": "MDS, BDS — Principal Dentist"
+        }
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --royal-blue: #1A3A6B;
+            --royal-blue-dark: #0F2647;
+            --royal-blue-light: #2A5298;
+            --white: #FFFFFF;
+            --light-grey: #F4F6F9;
+            --silver: #C0C0C0;
+            --silver-light: #E8E8E8;
+            --text-dark: #2C2C2C;
+            --text-medium: #555555;
+            --text-light: #777777;
+            --gold-accent: #B8960C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background: var(--white);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Times New Roman', 'Georgia', serif;
+            color: var(--royal-blue);
+            line-height: 1.3;
+        }
+
+        /* ========== TOP BAR ========== */
+        .top-bar {
+            background: var(--royal-blue-dark);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .top-bar a {
+            color: var(--silver-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar i {
+            margin-right: 6px;
+            color: var(--silver);
+        }
+
+        /* ========== CONTAINER ========== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ========== NAVBAR ========== */
+        .navbar {
+            background: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(26, 58, 107, 0.08);
+            border-bottom: 3px solid var(--royal-blue);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            padding: 12px 0;
+        }
+
+        .nav-logo-icon {
+            width: 52px;
+            height: 52px;
+            background: var(--royal-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            flex-shrink: 0;
+            border: 2px solid var(--silver);
+        }
+
+        .nav-logo-text h1 {
+            font-size: 1.25rem;
+            color: var(--royal-blue);
+            margin: 0;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-logo-text span {
+            font-size: 0.72rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 0;
+            align-items: center;
+        }
+
+        .nav-links li a {
+            display: block;
+            padding: 22px 18px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -3px;
+        }
+
+        .nav-links li a:hover,
+        .nav-links li a.active {
+            color: var(--royal-blue);
+            border-bottom-color: var(--royal-blue);
+            background: var(--light-grey);
+        }
+
+        .nav-cta {
+            background: var(--royal-blue) !important;
+            color: var(--white) !important;
+            border-radius: 4px !important;
+            padding: 10px 24px !important;
+            margin-left: 10px;
+            border-bottom: none !important;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--royal-blue-dark) !important;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--royal-blue);
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            position: relative;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: var(--royal-blue-dark);
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 38, 71, 0.92) 0%, rgba(26, 58, 107, 0.8) 50%, rgba(42, 82, 152, 0.7) 100%);
+            z-index: 2;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .hero-content {
+            color: var(--white);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(184, 150, 12, 0.2);
+            border: 1px solid var(--gold-accent);
+            color: var(--gold-accent);
+            padding: 6px 18px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 8px;
+            line-height: 1.15;
+        }
+
+        .hero-content h2 {
+            font-size: 1.4rem;
+            color: var(--silver);
+            font-weight: 400;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .hero-content p {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--white);
+            color: var(--royal-blue);
+            padding: 14px 32px;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .btn-primary:hover {
+            background: var(--light-grey);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--white);
+            padding: 14px 32px;
+            border: 2px solid var(--silver);
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+            border: 4px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-image .since-badge {
+            position: absolute;
+            bottom: -15px;
+            right: 20px;
+            background: var(--royal-blue);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-align: center;
+            border: 2px solid var(--gold-accent);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .since-badge .year {
+            display: block;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: var(--gold-accent);
+        }
+
+        .since-badge .label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ========== TRUST STATS ========== */
+        .trust-stats {
+            background: var(--white);
+            padding: 0;
+            position: relative;
+            z-index: 10;
+            margin-top: -40px;
+        }
+
+        .trust-stats .container {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 10px 50px rgba(26, 58, 107, 0.12);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            border: 1px solid var(--silver-light);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 36px 20px;
+            border-right: 1px solid var(--silver-light);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--light-grey);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 14px;
+            color: var(--royal-blue);
+            font-size: 1.2rem;
+            border: 1px solid var(--silver-light);
+        }
+
+        .stat-number {
+            font-family: 'Times New Roman', serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--royal-blue);
+            display: block;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 4px;
+        }
+
+        /* ========== SECTION COMMON ========== */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-grey {
+            background: var(--light-grey);
+        }
+
+        .section-blue {
+            background: var(--royal-blue);
+            color: var(--white);
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .section-header .overline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--royal-blue);
+            margin-bottom: 12px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .section-header .overline::before,
+        .section-header .overline::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--silver);
+        }
+
+        .section-blue .section-header .overline {
+            color: var(--gold-accent);
+        }
+
+        .section-blue .section-header .overline::before,
+        .section-blue .section-header .overline::after {
+            background: var(--gold-accent);
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+        }
+
+        .section-blue .section-header h2 {
+            color: var(--white);
+        }
+
+        .section-header p {
+            color: var(--text-medium);
+            font-size: 1.05rem;
+        }
+
+        .section-blue .section-header p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* ========== SERVICES ========== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid var(--silver-light);
+            border-radius: 6px;
+            padding: 36px 28px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--royal-blue);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            box-shadow: 0 15px 40px rgba(26, 58, 107, 0.1);
+            transform: translateY(-4px);
+        }
+
+        .service-card-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--light-grey);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            color: var(--royal-blue);
+            margin-bottom: 20px;
+            border: 1px solid var(--silver-light);
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--text-medium);
+            font-size: 0.92rem;
+            line-height: 1.7;
+        }
+
+        /* ========== ABOUT DR. MEHTA ========== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 20px 50px rgba(26, 58, 107, 0.15);
+            border: 4px solid var(--white);
+        }
+
+        .about-image .experience-badge {
+            position: absolute;
+            bottom: 20px;
+            left: -20px;
+            background: var(--royal-blue);
+            color: var(--white);
+            padding: 18px 24px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(26, 58, 107, 0.3);
+            border: 2px solid var(--gold-accent);
+        }
+
+        .experience-badge .number {
+            display: block;
+            font-family: 'Times New Roman', serif;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--gold-accent);
+            line-height: 1;
+        }
+
+        .experience-badge .text {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .about-content .subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+            font-style: italic;
+            margin-bottom: 24px;
+        }
+
+        .about-content p {
+            color: var(--text-medium);
+            margin-bottom: 18px;
+            font-size: 0.98rem;
+        }
+
+        .qualifications {
+            list-style: none;
+            margin: 24px 0;
+        }
+
+        .qualifications li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: var(--text-medium);
+            font-size: 0.95rem;
+        }
+
+        .qualifications li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--royal-blue);
+            font-size: 0.8rem;
+        }
+
+        .certifications {
+            display: flex;
+            gap: 16px;
+            margin-top: 28px;
+            flex-wrap: wrap;
+        }
+
+        .cert-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--light-grey);
+            border: 1px solid var(--silver-light);
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-size: 0.82rem;
+            color: var(--text-medium);
+            font-weight: 500;
+        }
+
+        .cert-badge i {
+            color: var(--gold-accent);
+        }
+
+        /* ========== TESTIMONIALS ========== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 36px 30px;
+            box-shadow: 0 8px 30px rgba(26, 58, 107, 0.08);
+            border: 1px solid var(--silver-light);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '\201C';
+            font-family: 'Times New Roman', serif;
+            font-size: 5rem;
+            color: var(--royal-blue);
+            opacity: 0.12;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 16px;
+            color: var(--gold-accent);
+            font-size: 0.85rem;
+        }
+
+        .testimonial-card p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 22px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            border-top: 1px solid var(--silver-light);
+            padding-top: 18px;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--silver-light);
+        }
+
+        .testimonial-author-info h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .testimonial-author-info span {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* ========== APPOINTMENT FORM ========== */
+        .appointment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .appointment-info h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .appointment-info p {
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 32px;
+            font-size: 1rem;
+        }
+
+        .contact-details {
+            list-style: none;
+        }
+
+        .contact-details li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        .contact-details li i {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-accent);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .contact-details li strong {
+            display: block;
+            color: var(--white);
+            font-size: 0.9rem;
+            margin-bottom: 2px;
+        }
+
+        .contact-details li span {
+            font-size: 0.9rem;
+        }
+
+        .appointment-form {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .appointment-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 6px;
+        }
+
+        .appointment-form .form-subtitle {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 28px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 6px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid var(--silver-light);
+            border-radius: 4px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            background: var(--light-grey);
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--royal-blue);
+            background: var(--white);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: var(--royal-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-submit:hover {
+            background: var(--royal-blue-dark);
+            box-shadow: 0 8px 25px rgba(26, 58, 107, 0.3);
+        }
+
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--royal-blue-dark);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 60px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer-brand h3 {
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 4px;
+        }
+
+        .footer-brand .tagline {
+            color: var(--gold-accent);
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--silver);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.85rem;
+        }
+
+        .footer-social a:hover {
+            background: var(--royal-blue-light);
+            color: var(--white);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-size: 1rem;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+        }
+
+        .footer-hours li {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            font-size: 0.88rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-hours li span:last-child {
+            color: var(--white);
+        }
+
+        .footer-map {
+            border-radius: 6px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 14px;
+        }
+
+        .footer-map iframe {
+            width: 100%;
+            height: 160px;
+            border: 0;
+            filter: grayscale(0.3);
+        }
+
+        .footer-address {
+            font-size: 0.88rem;
+            line-height: 1.6;
+        }
+
+        .footer-address i {
+            color: var(--gold-accent);
+            margin-right: 6px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.82rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* ========== WHATSAPP FAB ========== */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: var(--white);
+            padding: 14px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .whatsapp-fab:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-fab i {
+            font-size: 1.3rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+                border-top: 1px solid var(--silver-light);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li a {
+                padding: 14px 20px;
+                border-bottom: 1px solid var(--light-grey);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-content p {
+                max-width: 100%;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                display: none;
+            }
+
+            .trust-stats .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .appointment-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+
+            .whatsapp-fab span {
+                display: none;
+            }
+
+            .whatsapp-fab {
+                padding: 16px;
+                border-radius: 50%;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<a href="https://wa.me/919821061234" class="whatsapp-btn" target="_blank">WhatsApp</a>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:02024001234"><i class="fas fa-phone-alt"></i> 020-2400 1234</a>
+                <a href="mailto:info@drmehta-dental.com"><i class="fas fa-envelope"></i> info@drmehta-dental.com</a>
+            </div>
+            <div class="top-bar-right">
+                <span><i class="fas fa-clock"></i> Mon–Sat: 9:30 AM – 1:30 PM, 5:00 – 9:00 PM</span>
+                <a href="#appointment"><i class="fas fa-calendar-check"></i> Book Appointment</a>
+            </div>
+        </div>
+    </div>
 
-<!-- NAV -->
-<nav>
- <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
- <div class="flex items-center gap-3">
- 
- <div>
- <div class="font-bold green" style="font-family:'Merriweather',serif; font-size:1rem;">GreenLeaf Dental</div>
- <div class="text-xs text-gray-400">Wellness & Dentistry, Viman Nagar</div>
- </div>
- </div>
- <div class="hidden md:flex gap-8 text-sm font-semibold text-gray-600">
- <a href="#services" class="hover:text-green-800 transition-colors">Services</a>
- <a href="#philosophy" class="hover:text-green-800 transition-colors">Our Approach</a>
- <a href="#testimonials" class="hover:text-green-800 transition-colors">Stories</a>
- <a href="#contact" class="hover:text-green-800 transition-colors">Visit Us</a>
- </div>
- <a href="#book" class="btn-green text-sm">Schedule Visit</a>
- </div>
-</nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">
+                <div class="nav-logo-icon">
+                    <i class="fas fa-tooth"></i>
+                </div>
+                <div class="nav-logo-text">
+                    <h1>Dr. Mehta's Dental Clinic</h1>
+                    <span>Established 1998 &bull; Sadashiv Peth, Pune</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#appointment" class="nav-cta">Book Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<section class="sand-bg py-24 px-6">
- <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
- <div class="flex-1" id="hero-text">
- <div class="leaf-tag mb-6"> Holistic Dental Wellness</div>
- <h1 style="font-size:3rem; font-weight:900; line-height:1.2; color:#1a1a1a;" class="mb-6">
- Dental Care That's<br>Good for <span class="green">Mind, Body</span><br>& Soul
- </h1>
- <p class="text-gray-600 text-lg mb-8 leading-relaxed max-w-md">
- We believe great dental health is part of overall wellness. Gentle treatments, natural materials, and a calm healing environment in the heart of Viman Nagar.
- </p>
- <div class="flex flex-wrap gap-4 mb-12">
- <a href="#book" class="btn-green">Schedule Your Visit </a>
- <a href="tel:02065432109" class="btn-outline">Talk to Us</a>
- </div>
- <div class="grid grid-cols-3 gap-6">
- <div class="stat-item">
- <div class="font-bold green" style="font-family:'Merriweather',serif; font-size:1.8rem;">10+</div>
- <div class="text-xs text-gray-500">Years of Wellness Care</div>
- </div>
- <div class="stat-item">
- <div class="font-bold green" style="font-family:'Merriweather',serif; font-size:1.8rem;">2.5K</div>
- <div class="text-xs text-gray-500">Patients Treated</div>
- </div>
- <div class="stat-item">
- <div class="font-bold green" style="font-family:'Merriweather',serif; font-size:1.8rem;">100%</div>
- <div class="text-xs text-gray-500">Safe Materials</div>
- </div>
- </div>
- </div>
- <div class="flex-1 flex justify-center">
- <div style="position:relative;">
- <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=500&q=80" alt="Natural dental clinic" class="rounded-lg shadow-xl w-full max-w-md object-cover" style="max-height:440px; border: 4px solid var(--green-pale);">
- <div style="position:absolute; top:-16px; right:-16px; background:var(--green); color:white; padding:12px 18px; border-radius:8px; font-family:'Merriweather',serif;">
- <div style="font-size:1.4rem; font-weight:700;"></div>
- <div style="font-size:0.7rem; font-weight:600;">BPA-Free<br>Materials</div>
- </div>
- </div>
- </div>
- </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&h=900&fit=crop" alt="Modern dental clinic interior">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    26 Years of Excellence
+                </div>
+                <h1>Your Family's Smile,<br>Our Life's Work</h1>
+                <h2>Trusted by 3 Generations of Pune Families</h2>
+                <p>At Dr. Mehta's Dental Clinic, we've been preserving and perfecting smiles since 1998. With a commitment to time-tested techniques and modern precision, we deliver dental care that families trust — generation after generation.</p>
+                <div class="hero-buttons">
+                    <a href="#appointment" class="btn-primary">
+                        <i class="fas fa-calendar-alt"></i> Book Appointment
+                    </a>
+                    <a href="https://wa.me/919850001234?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Dr.%20Mehta%27s%20Dental%20Clinic." class="btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=700&h=500&fit=crop" alt="Professional dental care at Dr. Mehta's Clinic">
+                <div class="since-badge">
+                    <span class="year">1998</span>
+                    <span class="label">Established</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- PHILOSOPHY -->
-<section class="py-16 px-6 pale-green" id="philosophy">
- <div class="max-w-4xl mx-auto text-center">
- <div class="leaf-tag mb-6">Our Philosophy</div>
- <h2 style="font-size:2rem; color:#1a1a1a;" class="font-bold mb-6">Dentistry Should Heal, Not Harm</h2>
- <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-10">We use only biocompatible, BPA-free materials. Our clinic uses natural light, plants, and calming music to reduce anxiety. Every treatment plan considers your whole health — not just your teeth.</p>
- <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
- <div class="bg-white rounded-lg p-6">
- <div style="font-size:2rem; margin-bottom:8px;"></div>
- <div class="font-bold green mb-2">Natural Materials</div>
- <div class="text-gray-500 text-sm">BPA-free composites, metal-free crowns, biocompatible implants only.</div>
- </div>
- <div class="bg-white rounded-lg p-6">
- <div style="font-size:2rem; margin-bottom:8px;"></div>
- <div class="font-bold green mb-2">Calm Environment</div>
- <div class="text-gray-500 text-sm">Aromatherapy, soft lighting, and soothing music for an anxiety-free visit.</div>
- </div>
- <div class="bg-white rounded-lg p-6">
- <div style="font-size:2rem; margin-bottom:8px;"></div>
- <div class="font-bold green mb-2">Whole-Health Focus</div>
- <div class="text-gray-500 text-sm">We connect oral health to your overall wellbeing — diet, stress, and lifestyle.</div>
- </div>
- </div>
- </div>
-</section>
+    <!-- Trust Stats -->
+    <section class="trust-stats">
+        <div class="container" data-aos="fade-up" data-aos-duration="800">
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                <span class="stat-number">26+</span>
+                <span class="stat-label">Years of Service</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-users"></i></div>
+                <span class="stat-number">48,000+</span>
+                <span class="stat-label">Patients Treated</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                <span class="stat-number">3</span>
+                <span class="stat-label">Generations Trust Us</span>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fas fa-star"></i></div>
+                <span class="stat-number">4.8</span>
+                <span class="stat-label">Google Rating (1,240 reviews)</span>
+            </div>
+        </div>
+    </section>
 
-<!-- SERVICES -->
-<section class="py-20 px-6" id="services">
- <div class="max-w-6xl mx-auto">
- <div class="text-center mb-14">
- <div class="leaf-tag mb-4">Treatments</div>
- <h2 style="font-size:2.2rem;" class="font-bold text-gray-900">Gentle, Effective Care</h2>
- <p class="text-gray-500 mt-3">Every procedure done with precision and care for your comfort.</p>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;"></div><h3 class="font-bold text-lg green mb-2">Root Canal</h3><p class="text-gray-500 text-sm mb-3">Painless rotary endodontics. Keep your natural tooth forever.</p><div class="green font-bold text-sm">3,500 onwards</div></div>
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;"></div><h3 class="font-bold text-lg green mb-2">Metal-Free Implants</h3><p class="text-gray-500 text-sm mb-3">Zirconia implants — strong, beautiful, and biocompatible.</p><div class="green font-bold text-sm">28,000 onwards</div></div>
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;">✨</div><h3 class="font-bold text-lg green mb-2">Natural Whitening</h3><p class="text-gray-500 text-sm mb-3">Gentle whitening without harsh chemicals. Safe for sensitive teeth.</p><div class="green font-bold text-sm">5,000 onwards</div></div>
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;"></div><h3 class="font-bold text-lg green mb-2">Ceramic Crowns</h3><p class="text-gray-500 text-sm mb-3">100% metal-free zirconia crowns. Natural look, lasting strength.</p><div class="green font-bold text-sm">7,000 onwards</div></div>
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;"></div><h3 class="font-bold text-lg green mb-2">Clear Aligners</h3><p class="text-gray-500 text-sm mb-3">Invisible teeth straightening. No metal, no discomfort.</p><div class="green font-bold text-sm">30,000 onwards</div></div>
- <div class="card"><div style="font-size:2rem; margin-bottom:12px;"></div><h3 class="font-bold text-lg green mb-2">Deep Cleaning</h3><p class="text-gray-500 text-sm mb-3">Professional scaling with ozone therapy for gum health.</p><div class="green font-bold text-sm">1,200 onwards</div></div>
- </div>
- </div>
-</section>
+    <!-- Services Section -->
+    <section class="section section-grey" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="overline">Our Services</div>
+                <h2>Comprehensive Dental Care<br>Under One Roof</h2>
+                <p>From routine check-ups to advanced restorative procedures, we offer the full spectrum of dental care your family needs — with the personal attention you deserve.</p>
+            </div>
 
-<!-- TESTIMONIALS -->
-<section class="py-20 px-6 sand-bg" id="testimonials">
- <div class="max-w-6xl mx-auto">
- <div class="text-center mb-14">
- <div class="leaf-tag mb-4">Patient Stories</div>
- <h2 style="font-size:2.2rem;" class="font-bold">Healing Experiences</h2>
- </div>
- <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
- <div class="card"><div class="text-yellow-500 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733; 5/5</div><p class="text-gray-600 text-sm italic mb-4">"The calmest dental experience I've ever had. The aromatherapy and gentle approach made all the difference."</p><div class="font-semibold green text-sm">Shruti P., Viman Nagar</div></div>
- <div class="card"><div class="text-yellow-500 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733; 5/5</div><p class="text-gray-600 text-sm italic mb-4">"Got metal-free implants here — they look completely natural. The team is knowledgeable and caring."</p><div class="font-semibold green text-sm">Deepak M., Kalyani Nagar</div></div>
- <div class="card"><div class="text-yellow-500 mb-3">&#9733;&#9733;&#9733;&#9733;&#9733; 5/5</div><p class="text-gray-600 text-sm italic mb-4">"Finally a dentist who explains everything and uses safe materials. I trust GreenLeaf completely."</p><div class="font-semibold green text-sm">Meera K., Hadapsar</div></div>
- </div>
- </div>
-</section>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-icon"><i class="fas fa-teeth"></i></div>
+                    <h3>General & Preventive Dentistry</h3>
+                    <p>Comprehensive oral examinations, professional cleaning, scaling, polishing, fluoride treatments, and pit &amp; fissure sealants to keep dental problems at bay.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Painless, precision root canal therapy using rotary endodontics. We save teeth that others might extract — preserving your natural smile for years to come.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-icon"><i class="fas fa-teeth-open"></i></div>
+                    <h3>Dental Implants</h3>
+                    <p>Premium-quality titanium implants for permanent tooth replacement. Full-mouth rehabilitation, single implants, and implant-supported dentures available.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-icon"><i class="fas fa-magic"></i></div>
+                    <h3>Cosmetic Dentistry</h3>
+                    <p>Smile makeovers with porcelain veneers, tooth-coloured bonding, teeth whitening (Zoom & laser), and aesthetic recontouring for the perfect smile.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-icon"><i class="fas fa-child"></i></div>
+                    <h3>Paediatric Dentistry</h3>
+                    <p>Gentle, child-friendly dental care. From first tooth check-ups to habit-breaking appliances — making dental visits a positive experience for your little ones.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>Orthodontics & Braces</h3>
+                    <p>Traditional metal braces, ceramic braces, and clear aligners for all ages. Correct misalignment, gaps, and bite issues with time-proven orthodontic methods.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-icon"><i class="fas fa-band-aid"></i></div>
+                    <h3>Oral Surgery</h3>
+                    <p>Wisdom tooth extraction, impacted teeth removal, jaw cyst treatment, and minor oral surgical procedures — all performed with utmost care and precision.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-icon"><i class="fas fa-lungs"></i></div>
+                    <h3>Gum (Periodontal) Treatment</h3>
+                    <p>Scaling, root planing, gum surgery, and management of periodontal disease. We restore gum health and prevent tooth loss caused by gum deterioration.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Crowns, Bridges & Dentures</h3>
+                    <p>Precision-crafted porcelain crowns, fixed bridges, and comfortable dentures (complete and partial) to restore function and aesthetics to your smile.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- BOOKING -->
-<section class="py-20 px-6 bg-green" id="book">
- <div class="max-w-3xl mx-auto text-center">
- <div class="leaf-tag mb-6" style="background:rgba(255,255,255,0.2); color:white;">Begin Your Wellness Journey</div>
- <h2 style="font-size:2.2rem;" class="font-bold text-white mb-4">Schedule Your Visit</h2>
- <p class="text-green-100 mb-10">A consultation with Dr. Varsha Kulkarni costs nothing. Your health comes first.</p>
- <form class="bg-white rounded-lg p-8 text-left shadow-2xl">
- <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
- <div><label class="text-sm font-semibold text-gray-700 block mb-2">Your Name</label><input type="text" placeholder="Full name" class="w-full border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none focus:border-green-600"></div>
- <div><label class="text-sm font-semibold text-gray-700 block mb-2">Phone</label><input type="tel" placeholder="+91 98210 61234" class="w-full border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none"></div>
- <div><label class="text-sm font-semibold text-gray-700 block mb-2">Concern</label>
- <select class="w-full border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none">
- <option>General Wellness Checkup</option><option>Root Canal</option><option>Implants</option><option>Whitening</option><option>Aligners</option><option>Other</option>
- </select>
- </div>
- <div><label class="text-sm font-semibold text-gray-700 block mb-2">Preferred Date</label><input type="date" class="w-full border border-gray-200 rounded px-4 py-3 text-sm focus:outline-none"></div>
- </div>
- <button type="submit" class="btn-green w-full text-center py-4 rounded">Schedule My Visit </button>
- </form>
- </div>
-</section>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=750&fit=crop" alt="Dr. Rajesh Mehta — Principal Dentist">
+                    <div class="experience-badge">
+                        <span class="number">26</span>
+                        <span class="text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="section-header" style="text-align:left; margin:0 0 20px;">
+                        <div class="overline" style="justify-content:flex-start;">
+                            <span></span>Meet Your Dentist<span></span>
+                        </div>
+                    </div>
+                    <h2>Dr. Rajesh Mehta</h2>
+                    <p class="subtitle">MDS (Prosthodontics), BDS — Principal Dentist & Founder</p>
+                    <p>With over 26 years of dedicated practice, Dr. Rajesh Mehta has built a reputation for meticulous clinical skill and genuine patient care. After completing his BDS from Bharati Vidyapeeth Dental College, Pune, and MDS in Prosthodontics from Government Dental College, Mumbai, he established this clinic in 1998 with a simple philosophy: treat every patient like family.</p>
+                    <p>Dr. Mehta's practice combines traditional values of thorough diagnosis and patient education with modern dental technology. He is known across Sadashiv Peth — and indeed across Pune — for his calm chairside manner, his honest treatment planning, and his insistence on never recommending unnecessary procedures.</p>
 
-<!-- FOOTER -->
-<footer style="background:#1a2e24;" class="text-gray-400 py-10 px-6">
- <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-8">
- <div><div class="text-white font-bold text-lg mb-2" style="font-family:'Merriweather',serif;"> GreenLeaf Dental Wellness</div><p class="text-sm max-w-xs">Holistic dental care where your health is the priority. Viman Nagar, Pune.</p></div>
- <div><div class="text-white font-semibold mb-3 text-sm">Visit</div><div class="text-sm space-y-1"><div>Clover Center, Viman Nagar, Pune</div><div>020-6543-2109</div><div> Mon–Sat: 9AM–7PM</div></div></div>
- </div>
- <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-green-900 text-center text-xs">© 2026 GreenLeaf Dental Wellness. Growing healthy smiles in Pune.</div>
-</footer>
+                    <ul class="qualifications">
+                        <li>MDS (Prosthodontics) — Government Dental College, Mumbai</li>
+                        <li>BDS — Bharati Vidyapeeth Dental College, Pune (Gold Medalist)</li>
+                        <li>Fellow, Indian Prosthodontic Society</li>
+                        <li>Member, Indian Dental Association — Pune Branch</li>
+                        <li>Advanced training in Implantology (Germany, 2012)</li>
+                        <li>Continuing education: 500+ hours of professional development</li>
+                    </ul>
 
-<script>
- gsap.registerPlugin(ScrollTrigger);
- gsap.from("#hero-text", { opacity: 0, y: 40, duration: 1.2, ease: "power2.out" });
- gsap.utils.toArray(".card").forEach((card, i) => {
- gsap.from(card, { opacity: 0, y: 25, duration: 0.7, delay: i * 0.08, scrollTrigger: { trigger: card, start: "top 88%" } });
- });
+                    <div class="certifications">
+                        <div class="cert-badge"><i class="fas fa-certificate"></i> IDA Certified</div>
+                        <div class="cert-badge"><i class="fas fa-certificate"></i> ISO 9001:2015</div>
+                        <div class="cert-badge"><i class="fas fa-certificate"></i> MCI Registered</div>
+                        <div class="cert-badge"><i class="fas fa-shield-alt"></i> NABH Compliant</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  // Form → WhatsApp
-  document.querySelectorAll('form').forEach(form => {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      var name = this.querySelector('input[type="text"]');
-      var phone = this.querySelector('input[type="tel"]');
-      var msg = 'Hi, I would like to book an appointment at GreenLeaf Dental Wellness.' + (name && name.value ? ' My name is ' + name.value + '.' : '') + (phone && phone.value ? ' My number is ' + phone.value + '.' : '');
-      window.open('https://wa.me/919821061234?text=' + encodeURIComponent(msg), '_blank');
-    });
-  });
-</script>
+    <!-- Testimonials Section -->
+    <section class="section section-grey" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="overline">Patient Testimonials</div>
+                <h2>Trusted Across Generations</h2>
+                <p>Our patients don't just come back — they bring their children and grandchildren. Here's what families who've trusted us for decades have to say.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"My family has been visiting Dr. Mehta since 1999 — that's twenty-five years now. He did my root canal, my wife's crowns, and now my grandchildren go to him for their regular check-ups. The clinic has changed with the times, but the care and honesty have stayed exactly the same. He never recommends anything unnecessary. In Sadashiv Peth, everyone knows — if you have a tooth problem, you go to Mehta Doctor."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1566753323558-f4e0952af115?w=100&h=100&fit=crop&crop=face" alt="Mr. Suresh Joshi">
+                        <div class="testimonial-author-info">
+                            <h4>Mr. Suresh Joshi</h4>
+                            <span>Patient since 1999 &bull; Sadashiv Peth</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"I was absolutely terrified of dentists before I came to Dr. Mehta fifteen years ago. He was so patient, explained every single step before doing it, and never once made me feel rushed. He saved a tooth that two other dentists wanted to extract. Now my daughter, who inherited my dental anxiety, comes here happily because of the gentle care. We drive from Kothrud just for him — that tells you everything."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" alt="Mrs. Anita Kulkarni">
+                        <div class="testimonial-author-info">
+                            <h4>Mrs. Anita Kulkarni</h4>
+                            <span>Patient since 2009 &bull; Kothrud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Dr. Mehta did my complete dental implant work three years ago, and the result has been flawless. What impressed me most was his thorough approach — multiple consultations, detailed X-rays, honest discussion of options and costs before we started. No surprises. My father had his dentures made here in 2003, and he still wears the same set! The quality of work speaks for itself across twenty-plus years."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Mr. Vikram Deshpande">
+                        <div class="testimonial-author-info">
+                            <h4>Mr. Vikram Deshpande</h4>
+                            <span>Patient since 2014 &bull; Narayan Peth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment & Technology Highlight -->
+    <section class="section">
+        <div class="container">
+            <div class="about-grid" style="direction: rtl;">
+                <div style="direction: ltr;" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=700&h=500&fit=crop" alt="Advanced dental X-ray and diagnostic equipment" style="width:100%; border-radius:8px; box-shadow: 0 20px 50px rgba(26,58,107,0.15); border: 4px solid var(--white);">
+                </div>
+                <div style="direction: ltr;" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="section-header" style="text-align:left; margin:0 0 20px;">
+                        <div class="overline" style="justify-content:flex-start;">
+                            <span></span>Our Commitment<span></span>
+                        </div>
+                    </div>
+                    <h2 style="font-size:2rem; margin-bottom:16px;">Traditional Values,<br>Modern Precision</h2>
+                    <p style="color:var(--text-medium); margin-bottom:14px;">While our values are rooted in old-school patient care, our clinic is equipped with the latest diagnostic and treatment technology to ensure accurate, comfortable, and lasting results.</p>
+                    <ul class="qualifications">
+                        <li>Digital X-ray (RVG) with 90% less radiation exposure</li>
+                        <li>Intraoral camera for real-time patient education</li>
+                        <li>Rotary endodontics for painless root canals</li>
+                        <li>Autoclave sterilisation — Class B (European standard)</li>
+                        <li>Digital OPG & lateral cephalogram on premises</li>
+                        <li>Ultrasonic scaling instruments for gentle cleaning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="section section-blue" id="appointment">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="section-header" style="text-align:left; margin:0 0 16px;">
+                        <div class="overline" style="justify-content:flex-start;">
+                            <span></span>Get In Touch<span></span>
+                        </div>
+                    </div>
+                    <h2>Schedule Your<br>Appointment Today</h2>
+                    <p>Whether it's a routine check-up or a concern that's been bothering you, we're here to help. Call us, send a WhatsApp message, or fill in the form — we'll get back to you within the hour during clinic hours.</p>
+
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Clinic Address</strong>
+                                <span>Plot No. 42, 1st Floor, Near Vishrambaug Wada,<br>Sadashiv Peth, Pune — 411030, Maharashtra</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <span><a href="tel:02024001234" style="color:inherit; text-decoration:none;">020-2400 1234</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span><a href="https://wa.me/919850001234" style="color:inherit; text-decoration:none;" target="_blank">+91 98500 01234</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span><a href="mailto:info@drmehta-dental.com" style="color:inherit; text-decoration:none;">info@drmehta-dental.com</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Clinic Hours</strong>
+                                <span>Mon–Sat: 9:30 AM – 1:30 PM &amp; 5:00 PM – 9:00 PM<br>Sunday: Closed (Emergency cases accepted)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="appointment-form" data-aos="fade-left" data-aos-duration="1000">
+                    <h3>Book an Appointment</h3>
+                    <p class="form-subtitle">Fill in the details below. We'll confirm your slot shortly.</p>
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly to confirm your appointment.'); this.reset();">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="e.g. Rajesh Patil" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="e.g. 98500 12345" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="e.g. rajesh@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service">
+                                <option value="">— Select a service —</option>
+                                <option value="general">General Check-up & Cleaning</option>
+                                <option value="rct">Root Canal Treatment</option>
+                                <option value="implant">Dental Implants</option>
+                                <option value="cosmetic">Cosmetic Dentistry / Whitening</option>
+                                <option value="ortho">Orthodontics / Braces</option>
+                                <option value="paediatric">Paediatric (Child) Dentistry</option>
+                                <option value="crown">Crowns, Bridges & Dentures</option>
+                                <option value="gum">Gum Treatment</option>
+                                <option value="surgery">Oral Surgery / Extraction</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Notes</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your dental concern, preferred time slot, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-calendar-check"></i>&nbsp; Request Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Dr. Mehta's Dental Clinic</h3>
+                    <p class="tagline">Trusted Family Dentistry Since 1998</p>
+                    <p>For over 26 years, we've provided exceptional dental care to families across Pune. Our commitment to honest diagnosis, gentle treatment, and lasting results has earned us the trust of three generations.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+                        <a href="https://wa.me/919850001234" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#about">About Dr. Mehta</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Clinic Hours</h4>
+                    <ul class="footer-hours">
+                        <li><span>Monday – Friday</span> <span>9:30 AM – 1:30 PM<br>5:00 PM – 9:00 PM</span></li>
+                        <li><span>Saturday</span> <span>9:30 AM – 1:30 PM<br>5:00 PM – 9:00 PM</span></li>
+                        <li><span>Sunday</span> <span>Closed<br>(Emergencies accepted)</span></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Find Us</h4>
+                    <div class="footer-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3!2d73.853!3d18.513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSadashiv+Peth%2C+Pune!5e0!3m2!1sen!2sin!4v1700000000000"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Dr. Mehta's Dental Clinic Location">
+                        </iframe>
+                    </div>
+                    <p class="footer-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Plot No. 42, 1st Floor,<br>
+                        Near Vishrambaug Wada,<br>
+                        Sadashiv Peth, Pune — 411030<br>
+                        Maharashtra, India
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dr. Mehta's Dental Clinic. All rights reserved. | Serving Pune families since 1998.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a href="https://wa.me/919850001234?text=Hello%2C%20I%20would%20like%20to%20book%20an%20appointment%20at%20Dr.%20Mehta%27s%20Dental%20Clinic." class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>WhatsApp Us</span>
+    </a>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            duration: 700,
+            offset: 80
+        });
+    </script>
+
+    <!-- Smooth Scroll & Mobile Nav -->
+    <script>
+        // Close mobile nav on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+
+        // Active nav highlight on scroll
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset + 100;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+                if (navLink) {
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        navLink.classList.add('active');
+                    } else {
+                        navLink.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
